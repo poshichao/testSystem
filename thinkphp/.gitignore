@@ -1,4 +1,4 @@
+/composer.lock
+/vendor
 .idea
-composer.lock
-*.log
-thinkphp
+.DS_Store
