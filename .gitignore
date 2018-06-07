@@ -1,4 +1,5 @@
-﻿.idea
+.idea
 composer.lock
 *.log
 thinkphp
+document/考试系统/testSystemUML.asta
