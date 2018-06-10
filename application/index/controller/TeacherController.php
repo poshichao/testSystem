@@ -10,4 +10,8 @@ class TeacherController extends Controller {
 		$this->assign('teacher', $teacher);
 		return $this->fetch();
 	}
+
+	public function add() {
+		return $this->fetch();
+	}
 }
