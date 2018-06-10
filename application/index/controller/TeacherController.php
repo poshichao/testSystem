@@ -35,4 +35,12 @@ class TeacherController extends Controller {
 			return $this->error('保存失败！');
 		}
 	}
+
+	public function edit() {
+
+	}
+
+	public function delete() {
+		
+	}
 }
