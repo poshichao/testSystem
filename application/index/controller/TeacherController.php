@@ -7,8 +7,10 @@ use think\Request;
 
 class TeacherController extends Controller {
 	public function index() {
-		$teacher = Teacher::get(1);
-		$this->assign('teacher', $teacher);
+		$Teacher = new Teacher();
+
+		$teachers = $Teacher->select();
+		$this->assign('teachers', $teachers);
 		return $this->fetch();
 	}
 
