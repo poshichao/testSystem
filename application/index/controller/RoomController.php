@@ -11,8 +11,9 @@ namespace app\index\controller;
 
 use app\index\model\Room;
 use think\Controller;
+use app\index\controller\IndexController;
 
-class RoomController extends Controller
+class RoomController extends IndexController
 {
     public function index(){
         $Room = new Room();

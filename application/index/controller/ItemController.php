@@ -10,8 +10,9 @@ namespace app\index\controller;
 
 use app\index\model\Item;
 use think\Controller;
+use app\index\controller\IndexController;
 
-class ItemController extends Controller
+class ItemController extends IndexController
 {
     public function index() {
         $Item = new Item();

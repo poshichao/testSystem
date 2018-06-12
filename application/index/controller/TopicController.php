@@ -11,8 +11,9 @@ namespace app\index\controller;
 
 use app\index\model\Topic;
 use think\Controller;
+use app\index\controller\IndexController;
 
-class TopicController extends Controller
+class TopicController extends IndexController
 {
     public function index() {
         $Topic = new Topic();
