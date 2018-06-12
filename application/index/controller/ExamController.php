@@ -3,22 +3,22 @@
  * Created by PhpStorm.
  * User: Administrator
  * Date: 2018/6/12
- * Time: 19:01
+ * Time: 19:10
  */
 
 namespace app\index\controller;
 
 
-use app\index\model\Room;
+use app\index\model\Exam;
 use think\Controller;
 
-class RoomController extends Controller
+class ExamController extends Controller
 {
-    public function index(){
-        $Room = new Room();
+    public function index() {
+        $Exam = new Exam();
 
-        $rooms = $Room->select();
-        $this->assign('rooms', $rooms);
+        $Exams = $Exam->select();
+        $this->assign('exams', $Exams);
         return $this->fetch();
     }
 
