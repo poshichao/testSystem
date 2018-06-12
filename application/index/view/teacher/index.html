@@ -48,7 +48,7 @@
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
+                    <li><a href="{:url('login/logout')}"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -62,34 +62,22 @@
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
                 <li>
-                    <a class="active-menu" href="index.html"><i class="fa fa-dashboard"></i> 教师管理</a>
+                    <a class="active-menu" href="{:url('teacher/index')}"><i class="fa fa-dashboard"></i> 教师管理</a>
                 </li>
                 <li>
-                    <a href="../room/index.html"><i class="fa fa-desktop"></i> 班级管理</a>
+                    <a href="{:url('room/index')}"><i class="fa fa-desktop"></i> 班级管理</a>
                 </li>
                 <li>
-                    <a href="../exam/index.html"><i class="fa fa-sitemap"></i> 考试管理<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-sitemap"></i> 考试管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="../topic/index.html">知识点管理</a>
+                            <a href="{:url('topic/index')}">知识点管理</a>
                         </li>
                         <li>
-                            <a href="../type/index.html">题型管理</a>
+                            <a href="{:url('type/index')}">题型管理</a>
                         </li>
                         <li>
-                            <a href="index.html">试题管理<span class="fa arrow"></span></a>
-                            <!-- <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Link</a>
-                                </li>
-
-                            </ul> -->
+                            <a href="{:url('item/index')}">试题管理<span class="fa arrow"></span></a>
                         </li>
                     </ul>
                 </li>

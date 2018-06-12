@@ -8,11 +8,11 @@
 
 namespace app\index\controller;
 
-
 use app\index\model\Exam;
 use think\Controller;
+use app\index\controller\IndexController;
 
-class ExamController extends Controller
+class ExamController extends IndexController
 {
     public function index() {
         $Exam = new Exam();

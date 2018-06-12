@@ -4,8 +4,9 @@ namespace app\index\controller;
 use think\Controller;
 use app\index\model\Teacher;
 use think\Request;
+use app\index\controller\IndexController;
 
-class TeacherController extends Controller {
+class TeacherController extends IndexController {
 	public function index() {
 		$Teacher = new Teacher();
 
