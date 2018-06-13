@@ -1,3 +1,157 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{block name="title"}试题管理{/block}</title>
+    <!-- Bootstrap Styles-->
+    <link href="/testSystem/public/static/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="/testSystem/public/static/assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="/testSystem/public/static/assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="/testSystem/public/static/assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><i class="fa fa-comments"></i> <strong>HBT在线考试系统 </strong></a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                </ul>
+                <!-- /.dropdown-messages -->
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> 用户信息</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+    </nav>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="../teacher/index.html"><i class="fa fa-dashboard"></i> 教师管理</a>
+                </li>
+                <li>
+                    <a href="../room/index.html"><i class="fa fa-desktop"></i> 班级管理</a>
+                </li>
+                <li>
+                    <a href="../exam/index.html"><i class="fa fa-sitemap"></i> 考试管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="../topic/index.html">知识点管理</a>
+                        </li>
+                        <li>
+                            <a href="../type/index.html">题型管理</a>
+                        </li>
+                        <li>
+                            <a class="active-menu" href="index.html">试题管理<span class="fa arrow"></span></a>
+                            <!-- <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#">Third Level Link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Link</a>
+                                </li>
+
+                            </ul> -->
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        {block name="content"}
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-header">
+                        XXX <small>欢迎使用本系统</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li class="active">试题管理</li>
+                    </ol>
+                </div>
+            </div>
+            <a href="{:url('add')}" class="btn btn-primary col-md-offset-11"><li class="glyphicon glyphicon-plus"></li>&nbsp;添加</a>
+            <hr>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr class="info">
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>工号</th>
+                                    <th>密码</th>
+                                    <th>课程</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {volist name="items" id="teacher"}
+                                <tr>
+                                    <td>{$teacher->name}</td>
+                                    <td>{$teacher->sex}</td>
+                                    <td>{$teacher->work_number}</td>
+                                    <td>{$teacher->password}</td>
+                                    <td>{$teacher->klass_id}</td>
+                                    <td width="15%"><a href="{:url('edit')}" class="btn btn-info btn-xs"><li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;&nbsp;<a href="{:url('delete')}" class="btn btn-danger btn-xs"><li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a></td>
+                                </tr>
+                                {/volist}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/block}
+        <!-- /. ROW  -->
+        <footer>
+            <p>Copyright &copy; 2018.Company name 227 <a href="http://poshichao.github.io" target="_blank" title="模板之家">胡启明</a></p>
+        </footer>
+=======
 {extend name="teacher/index"/}
 {block name="title"}
 试题管理
@@ -9,6 +163,7 @@
         <ol class="breadcrumb">
             <li><a href="#">试题管理</a></li>
         </ol>
+>>>>>>> 6094df0f2ae31f6fabe59018dcb0b9f66f156beb
     </div>
 </div>
 {/block}

@@ -10,6 +10,7 @@ namespace app\index\controller;
 
 
 use app\index\model\Room;
+use app\index\model\Student;
 use think\Controller;
 use app\index\controller\IndexController;
 
@@ -33,5 +34,17 @@ class RoomController extends IndexController
 
     public function delete() {
 
+    }
+
+    public function member($room_id){
+
+
+        $res = (new Room())->getMemberByID($room_id);
+
+        $this->assign('students', $res['member']);
+
+
+
+        return $this->fetch();
     }
 }

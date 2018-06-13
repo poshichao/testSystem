@@ -1,5 +1,5 @@
-{extend name="teacher/index"/} 
-{block name="title"}班级管理{/block} 
+{extend name="teacher/index"/}
+{block name="title"}班级管理{/block}
 {block name="content"}
 <div id="page-inner">
     <div class="row">
@@ -8,42 +8,131 @@
                 <li class="active">班级管理</li>
             </ol>
         </div>
-    </div>
-    <a href="{:url('add')}" class="btn btn-primary col-md-offset-11">
-        <li class="glyphicon glyphicon-plus"></li>&nbsp;添加</a>
-    <hr>
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="table-responsive">
-                    <table class="table table-striped table-bordered table-hover">
-                        <thead>
-                            <tr class="info">
-                                <th>班级编号</th>
-                                <th>班级名称</th>
-                                <th>班级人数</th>
-                                <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {volist name="rooms" id="room"}
-                            <tr>
-                                <td>{$room->id}</td>
-                                <td>{$room->name}</td>
-                                <td>{$room->people_sum}</td>
-                                <td width="15%">
-                                    <a href="{:url('edit')}" class="btn btn-info btn-xs">
-                                        <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;&nbsp;
-                                    <a href="{:url('delete')}" class="btn btn-danger btn-xs">
-                                        <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
-                                </td>
-                            </tr>
-                            {/volist}
-                        </tbody>
-                    </table>
+        <<<<<<< HEAD
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                </ul>
+                <!-- /.dropdown-messages -->
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> 用户信息</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <a href="../teacher/index.html"><i class="fa fa-dashboard"></i> 教师管理</a>
+                    </li>
+                    <li>
+                        <a class="active-menu" href="index.html"><i class="fa fa-desktop"></i> 班级管理</a>
+                    </li>
+                    <li>
+                        <a href="../exam/index.html"><i class="fa fa-sitemap"></i> 考试管理<span
+                                class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="../topic/index.html">知识点管理</a>
+                            </li>
+                            <li>
+                                <a href="../type/index.html">题型管理</a>
+                            </li>
+                            <li>
+                                <a href="index.html">试题管理<span class="fa arrow"></span></a>
+                                <!-- <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+
+                                </ul> -->
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            {block name="content"}
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                            XXX
+                            <small>欢迎使用本系统</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active">班级管理</li>
+                        </ol>
+                    </div>
+                </div>
+                <a href="{:url('add')}" class="btn btn-primary col-md-offset-11">
+                    <li class="glyphicon glyphicon-plus"></li>&nbsp;添加</a>
+                <hr>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                    <tr class="info">
+                                        <th>班级编号</th>
+                                        <th>班级名称</th>
+                                        <th>班级人数</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {volist name="rooms" id="room"}
+                                    <tr>
+                                        <td>{$room->id}</td>
+                                        <td><a href="{:url('member',array('room_id'=>$room->id))}">{$room->name}</a>
+                                        </td>
+                                        <td>{$room->people_sum}</td>
+                                        <td width="15%">
+                                            <a href="{:url('edit')}" class="btn btn-info btn-xs">
+                                                <li class="glyphicon glyphicon-pencil"></li>
+                                                编辑</a>&nbsp;&nbsp;
+
+                                            <a href="{:url('delete')}" class="btn btn-danger btn-xs">
+                                                <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
+                                        </td>
+                                    </tr>
+                                    {/volist}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            {/block}
         </div>
     </div>
 </div>
-{/block}
