@@ -2,13 +2,13 @@
 {extend name="teacher/index"/} {block name="title"}教师管理--添加{/block} {block name="content"}
 <div id="page-inner">
     <div class="row">
-    <div class="col-md-12">
-        <ol class="breadcrumb">
-            <li><a href="#">教师管理</a></li>
-            <li  class="active">添加</li>
-        </ol>
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li><a href="#">教师管理</a></li>
+                <li class="active">添加</li>
+            </ol>
+        </div>
     </div>
-</div>
     <form class="form-horizontal col-md-6 col-md-offset-3" action="{:url('insert')}" method="post">
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
