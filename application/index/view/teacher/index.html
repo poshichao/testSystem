@@ -21,39 +21,17 @@
     <div id="wrapper">
         <nav class="navbar navbar-default top-navbar" role="navigation">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
                 <a class="navbar-brand" href="index.html"><i class="fa fa-comments"></i> <strong>HBT在线考试系统 </strong></a>
             </div>
             <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-                    <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
-                </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                    </ul>
-                    <!-- /.dropdown-messages -->
+                {eq name='$teacherId' value=""}
+                <li><a href="{:url('student/edit?id='.$studentId)}"><i class="fa fa-user fa-fw"></i> 用户信息</a>
+                {else}
+                <li><a href="{:url('teacher/edit?id='.$teacherId)}"><i class="fa fa-user fa-fw"></i> 用户信息</a>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> 用户信息</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="{:url('login/logout')}"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
+                {/eq}
+                <li><a href="{:url('login/logout')}"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
                 </li>
-                <!-- /.dropdown -->
             </ul>
         </nav>
         <!--/. NAV TOP  -->
@@ -62,22 +40,22 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li>
-                        <a {eq name=':request()->controller()' value="Teacher"} class="active-menu" {/eq} href="{:url('teacher/index')}"><i class="fa fa-dashboard"></i> 教师管理</a>
+                        <a {eq name=':request()->controller()' value="Teacher" } class="active-menu" {/eq} href="{:url('teacher/index')}"><i class="fa fa-dashboard"></i> 教师管理</a>
                     </li>
                     <li>
-                        <a {eq name=':request()->controller()' value="Room"} class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i> 班级管理</a>
+                        <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i> 班级管理</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-sitemap"></i> 考试管理<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a {eq name=':request()->controller()' value="Topic"} class="active-menu" {/eq} href="{:url('topic/index')}">知识点管理</a>
+                                <a {eq name=':request()->controller()' value="Topic" } class="active-menu" {/eq} href="{:url('topic/index')}">知识点管理</a>
                             </li>
                             <li>
-                                <a {eq name=':request()->controller()' value="Type"} class="active-menu" {/eq} href="{:url('type/index')}">题型管理</a>
+                                <a {eq name=':request()->controller()' value="Type" } class="active-menu" {/eq} href="{:url('type/index')}">题型管理</a>
                             </li>
                             <li>
-                                <a {eq name=':request()->controller()' value="Item"} class="active-menu" {/eq} href="{:url('item/index')}">试题管理</a>
+                                <a {eq name=':request()->controller()' value="Item" } class="active-menu" {/eq} href="{:url('item/index')}">试题管理</a>
                             </li>
                         </ul>
                     </li>
