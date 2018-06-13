@@ -11,8 +11,9 @@ namespace app\index\controller;
 
 use app\index\model\Type;
 use think\Controller;
+use app\index\controller\IndexController;
 
-class TypeController extends Controller
+class TypeController extends IndexController
 {
     public function index() {
         $Type = new Type();
