@@ -39,9 +39,10 @@ class RoomController extends IndexController
     public function member($room_id){
 
 
-        $students = $Student->select();
+        $res = (new Room())->getMemberByID($room_id);
 
-        $this->assign('students', $students);
+        $this->assign('students', $res['member']);
+
 
 
         return $this->fetch();

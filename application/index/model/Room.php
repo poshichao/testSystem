@@ -17,8 +17,8 @@ class Room extends Model
         return $this->hasMany('Student','room_id','id');
     }
 
-    public static function getMemberByID($id){
-        $banner = self::with('member')->select($id);
+    public function getMemberByID($id){
+        $banner = $this->with('member')->find($id);
         return $banner;
     }
 }
