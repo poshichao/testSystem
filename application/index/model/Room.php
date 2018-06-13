@@ -13,5 +13,12 @@ use think\Model;
 
 class Room extends Model
 {
+    public function member(){
+        return $this->hasMany('Student','room_id','id');
+    }
 
+    public static function getMemberByID($id){
+        $banner = self::with('member')->select($id);
+        return $banner;
+    }
 }

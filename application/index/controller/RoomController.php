@@ -10,6 +10,7 @@ namespace app\index\controller;
 
 
 use app\index\model\Room;
+use app\index\model\Student;
 use think\Controller;
 
 class RoomController extends Controller
@@ -32,5 +33,16 @@ class RoomController extends Controller
 
     public function delete() {
 
+    }
+
+    public function member($room_id){
+
+
+        $students = $Student->select();
+
+        $this->assign('students', $students);
+
+
+        return $this->fetch();
     }
 }

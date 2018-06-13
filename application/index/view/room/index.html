@@ -110,7 +110,8 @@
                     </ol>
                 </div>
             </div>
-            <a href="{:url('add')}" class="btn btn-primary col-md-offset-11"><li class="glyphicon glyphicon-plus"></li>&nbsp;添加</a>
+            <a href="{:url('add')}" class="btn btn-primary col-md-offset-11">
+                <li class="glyphicon glyphicon-plus"></li>&nbsp;添加</a>
             <hr>
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="panel panel-default">
@@ -129,9 +130,15 @@
                                 {volist name="rooms" id="room"}
                                 <tr>
                                     <td>{$room->id}</td>
-                                    <td>{$room->name}</td>
+                                    <td><a href="{:url('member',array('room_id'=>$room->id))}">{$room->name}</a></td>
                                     <td>{$room->people_sum}</td>
-                                    <td width="15%"><a href="{:url('edit')}" class="btn btn-info btn-xs"><li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;&nbsp;<a href="{:url('delete')}" class="btn btn-danger btn-xs"><li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a></td>
+                                    <td width="15%">
+                                        <a href="{:url('edit')}" class="btn btn-info btn-xs">
+                                            <li class="glyphicon glyphicon-pencil"></li>编辑</a>&nbsp;&nbsp;
+
+                                        <a href="{:url('delete')}" class="btn btn-danger btn-xs">
+                                            <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
+                                    </td>
                                 </tr>
                                 {/volist}
                                 </tbody>
@@ -144,7 +151,7 @@
         {/block}
         <!-- /. ROW  -->
         <footer>
-            <p>Copyright &copy; 2018.Company name 227 <a href="http://poshichao.github.io" target="_blank" title="模板之家">朴世超</a></p>
+            <p>Copyright &copy; 2018.Company name 227 <a href="http://poshichao.github.io" target="_blank" title="模板之家">胡启明</a></p>
         </footer>
     </div>
     <!-- /. PAGE INNER  -->
