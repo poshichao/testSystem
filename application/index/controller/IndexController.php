@@ -3,6 +3,7 @@ namespace app\index\controller;
 
 use think\Controller;
 use app\index\model\Common;
+use think\Session;
 
 class IndexController extends Controller{
 	public function __construct() {
@@ -10,6 +11,11 @@ class IndexController extends Controller{
 
 		if (!Common::isLogin()) {
 			return $this->error('请先登录！', url('Login/index'));
+		} else {
+			$teacherId = Session::get('teacherId');
+			$studentId = Session::get('studentId');
+			$this->assign('teacherId', $teacherId);
+			$this->assign('studentId', $studentId);
 		}
 	}
 

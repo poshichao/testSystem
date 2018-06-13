@@ -5,12 +5,14 @@ use think\Controller;
 use app\index\model\Teacher;
 use think\Request;
 use app\index\controller\IndexController;
+use think\Session;
 
 class TeacherController extends IndexController {
 	public function index() {
 		$Teacher = new Teacher();
 
 		$teachers = $Teacher->select();
+		
 		$this->assign('teachers', $teachers);
 		return $this->fetch();
 	}
