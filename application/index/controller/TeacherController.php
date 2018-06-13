@@ -5,7 +5,6 @@ use think\Controller;
 use app\index\model\Teacher;
 use think\Request;
 use app\index\controller\IndexController;
-use think\Session;
 
 class TeacherController extends IndexController {
 	public function index() {
