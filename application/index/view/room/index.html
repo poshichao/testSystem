@@ -80,18 +80,15 @@
         <div id="page-wrapper">
 
             <div id="page-inner">
+                {block name="content"}
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-header">
-                            XXX
-                            <small>欢迎使用本系统</small>
-                        </h1>
                         <ol class="breadcrumb">
                             <li class="active">班级管理</li>
                         </ol>
                     </div>
                 </div>
-                {block name="content"}
+
                 <a href="{:url('add')}" class="btn btn-primary col-md-offset-11">
                     <li class="glyphicon glyphicon-plus"></li>&nbsp;添加</a>
                 <hr>
@@ -116,6 +113,10 @@
                                         </td>
                                         <td>{$room->people_sum}</td>
                                         <td width="15%">
+                                            <a href="{:url('exam?id='.$room->id)}" class="btn btn-primary btn-xs">
+                                                <li class="glyphicon glyphicon-file"></li>
+                                                考试</a>&nbsp;
+
                                             <a href="{:url('edit?id='.$room->id)}" class="btn btn-info btn-xs">
                                                 <li class="glyphicon glyphicon-pencil"></li>
                                                 编辑</a>&nbsp;&nbsp;
