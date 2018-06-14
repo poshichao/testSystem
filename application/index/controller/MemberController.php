@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Administrator
- * Date: 2018/6/12
- * Time: 19:01
+ * Date: 2018/6/14
+ * Time: 11:16
  */
 
 namespace app\index\controller;
@@ -11,20 +11,22 @@ namespace app\index\controller;
 
 use app\index\model\Room;
 use app\index\model\Student;
-
 use think\Request;
 
-class RoomController extends IndexController
+class MemberController extends TeacherController
 {
     public function index()
     {
-        $Room = new Room();
 
-        $rooms = $Room->select();
-        $this->assign('rooms', $rooms);
+        $room_id = Request::instance()->get('room_id');
+
+        $res = (new Room())->getMemberByID($room_id);
+
+        $this->assign('students', $res['member']);
+
+
         return $this->fetch();
     }
-
     public function add() {
         return $this->fetch();
     }
@@ -32,11 +34,15 @@ class RoomController extends IndexController
     public function insert() {
         $post = Request::instance()->post();
 
-        $Room = new Room();
+        $Student = new Student();
 
-        $Room->name = $post['name'];
+        $Student->name = $post['name'];
+        $Student->sex = $post['sex'];
+        $Student->work_number = $post['work_number'];
+        $Student->password = $post['password'];
+        $Student->room_id = $post['room_id'];
 
-        if ($Room->save()) {
+        if ($Student->save()) {
             return $this->success('保存成功！', 'index');
         } else {
             return $this->error('保存失败！');
@@ -44,13 +50,13 @@ class RoomController extends IndexController
     }
 
     public function edit() {
-        $roomId = Request::instance()->param('id');
+        $studentId = Request::instance()->param('id');
 
-        if (is_null($Room = Room::get($roomId))) {
-            return $this->error('未找到id为' . $roomId . '的班级！');
+        if (is_null($Student = Student::get($studentId))) {
+            return $this->error('未找到id为' . $studentId . '的学生！');
         }
 
-        $this->assign('Room', $Room);
+        $this->assign('Student', $Student);
         return $this->fetch();
 
     }
@@ -58,7 +64,7 @@ class RoomController extends IndexController
     public function delete()
     {
         $id = Request::instance()->param('id');
-        $member = Room::get($id);
+        $member = Student::get($id);
         $room_id = Request::instance()->param('room_id');
         if (!is_null($member)) {
             if ($member->delete()) {
@@ -74,18 +80,19 @@ class RoomController extends IndexController
 
     public function update() {
         $post = Request::instance()->post();
-        $roomId = Request::instance()->param('id/d');
+        $studentId = Request::instance()->param('id/d');
 
-        $Room = Room::get($roomId);
+        $Student = Student::get($studentId);
 
-        $Room->name = $post['name'];
+        $Student->name = $post['name'];
+        $Student->sex = $post['sex'];
+        $Student->password = $post['password'];
+        $Student->work_number = $post['work_number'];
 
-        if ($Room->validate()->save()) {
+        if ($Student->validate()->save()) {
             return $this->success('保存成功！', url('index'));
         } else {
             return $this->error('保存失败！');
         }
     }
-
-
 }

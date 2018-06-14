@@ -1,5 +1,5 @@
 <!-- this is app/index/view/teacher/add.html -->
-{extend name="room/index"/} {block name="title"}班级管理--班级{/block} {block name="content"}
+{extend name="room/index"/} {block name="title"}班级管理--班级成员{/block} {block name="content"}
 <div id="page-inner">
     <div class="row">
         <div class="col-md-12">
@@ -33,11 +33,10 @@
                             <td>{$student->sex}</td>
                             <td>{$student->name}</td>
                             <td width="15%">
-                                <a href="{:url('edit')}" class="btn btn-info btn-xs">
-                                <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;
-                                &nbsp;
-                                <a href="{:url('delete')}" class="btn btn-danger btn-xs">
-                                <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
+                                <a href="{:url('edit?id='.$student->id.'&room_id='.$student->room_id)}" class="btn btn-info btn-xs">
+                                    <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;&nbsp;
+                                <a href="{:url('delete?id='.$student->id.'&room_id='.$student->room_id)}" class="btn btn-danger btn-xs">
+                                    <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
                             </td>
                         </tr>
                         {/volist}
