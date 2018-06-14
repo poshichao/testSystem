@@ -25,7 +25,7 @@
             </div>
             <ul class="nav navbar-top-links navbar-right">
                 {eq name='$teacherId' value=""}
-                <li><a href="{:url('student/edit?id='.$studentId)}"><i class="fa fa-user fa-fw"></i> 用户信息</a>
+                <li><a href="{:url('member/edit?id='.$studentId)}"><i class="fa fa-user fa-fw"></i> 用户信息</a>
                 {else}
                 <li><a href="{:url('teacher/edit?id='.$teacherId)}"><i class="fa fa-user fa-fw"></i> 用户信息</a>
                 </li>
@@ -46,7 +46,6 @@
                         <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} {eq name=':request()->controller()' value="Member"} class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i> 班级管理</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-qrcode"></i> 课程管理</a>
                         <a {eq name=':request()->controller()' value="Course"} class="active-menu" {/eq} href="{:url('course/index')}"><i class="fa fa-qrcode"></i>课程管理</a>
                     </li>
                     <li>
