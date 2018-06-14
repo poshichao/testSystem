@@ -11,7 +11,6 @@ namespace app\index\model;
 //知识点
 use think\Model;
 
-class Topic extends Model
-{
-
+class Topic extends Model {
+	
 }
