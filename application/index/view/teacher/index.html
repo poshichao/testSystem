@@ -92,7 +92,7 @@
                                             <th>姓名</th>
                                             <th>性别</th>
                                             <th>工号</th>
-                                            <th>课程</th>
+                                            <th>教授课程</th>
                                             <th>操作</th>
                                         </tr>
                                     </thead>
@@ -103,7 +103,7 @@
                                             <td>{$teacher->sex}</td>
                                             <td>{$teacher->work_number}</td>
                                             <td>
-                                                {volist name="$teacher->courses()" id="course"}
+                                                {volist name="$teacher->courses" id="course"}
                                                 {$course->getData('name')}    
                                                 {/volist}
                                             <td width="15%">

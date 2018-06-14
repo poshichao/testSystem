@@ -5,6 +5,7 @@ use think\Controller;
 use app\index\model\Teacher;
 use think\Request;
 use app\index\controller\IndexController;
+use app\index\model\Course;
 
 class TeacherController extends IndexController {
 	public function index() {
@@ -17,12 +18,16 @@ class TeacherController extends IndexController {
 	}
 
 	public function add() {
+		$Course = new Course();
+		$courses = $Course->select();
+		
+		$this->assign('courses', $courses);
 		return $this->fetch();
 	}
 
 	public function insert() {
 		$post = Request::instance()->post();
-		
+
 		$Teacher = new Teacher();
 
 		$Teacher->name = $post['name'];
@@ -31,6 +36,7 @@ class TeacherController extends IndexController {
 		$Teacher->password = $post['password'];
 
 		if ($Teacher->save()) {
+			$Teacher->courses()->save(['name'=>$post['course']]);
 			return $this->success('保存成功！', 'index');
 		} else {
 			return $this->error('保存失败！');
