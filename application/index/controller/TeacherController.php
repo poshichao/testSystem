@@ -29,7 +29,6 @@ class TeacherController extends IndexController {
 		$Teacher->sex = $post['sex'];
 		$Teacher->work_number = $post['work_number'];
 		$Teacher->password = $post['password'];
-		$Teacher->klass_id = $post['klass_id'];
 
 		if ($Teacher->save()) {
 			return $this->success('保存成功！', 'index');
@@ -59,7 +58,6 @@ class TeacherController extends IndexController {
 		$Teacher->sex = $post['sex'];
 		$Teacher->password = $post['password'];
 		$Teacher->work_number = $post['work_number'];
-		$Teacher->klass_id = $post['klass_id'];
 
 		if ($Teacher->validate()->save()) {
 			return $this->success('保存成功！', url('index'));
