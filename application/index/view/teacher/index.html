@@ -43,7 +43,10 @@
                         <a {eq name=':request()->controller()' value="Teacher" } class="active-menu" {/eq} href="{:url('teacher/index')}"><i class="fa fa-dashboard"></i> 教师管理</a>
                     </li>
                     <li>
-                        <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i> 班级管理</a>
+                        <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} {eq name=':request()->contorller()' value="Member"} class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i> 班级管理</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-qrcode"></i>课程管理</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-sitemap"></i> 考试管理<span class="fa arrow"></span></a>
@@ -99,7 +102,10 @@
                                             <td>{$teacher->name}</td>
                                             <td>{$teacher->sex}</td>
                                             <td>{$teacher->work_number}</td>
-                                            <td>{$teacher->klass_id}</td>
+                                            <td>
+                                                {volist name="$teacher->courses()" id="course"}
+                                                {$course->getData('name')}    
+                                                {/volist}
                                             <td width="15%">
                                                 <a href="{:url('edit?id='.$teacher->id)}" class="btn btn-info btn-xs">
                                                     <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;&nbsp;
