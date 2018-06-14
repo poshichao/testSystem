@@ -24,7 +24,7 @@
                             <tbody>
                                 {volist name="topics" id="topic"}
                                 <tr>
-                                    <td>{$topic->name}</td>
+                                    <td><a href="{:url('item/index?topic_id='.$topic->id)}">{$topic->name}</a></td>
                                     <td>{$topic->course_id}</td>
                                     <td width="30%">
                                         <a href="{:url('edit?id='.$topic->id)}" class="btn btn-info btn-xs">
