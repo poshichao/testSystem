@@ -11,6 +11,7 @@ namespace app\index\controller;
 use app\index\model\Item;
 use think\Controller;
 use app\index\controller\IndexController;
+use think\Request;
 
 class ItemController extends IndexController
 {
@@ -23,7 +24,22 @@ class ItemController extends IndexController
     }
 
     public function add() {
+        return $this->fetch();
+    }
 
+    public function insert() {
+        $post = Request::instance()->post();
+
+        $Item = new Item();
+        $Item->dry = $post['dry'];
+        $Item->option = $post['option'];
+        $Item->type_id = $post['type_id'];
+
+        if ($Item->save()) {
+            return $this->success('保存成功！', url('index'));
+        } else {
+            return $this->error('保存失败！');
+        }
     }
 
     public function edit() {
