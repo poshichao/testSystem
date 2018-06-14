@@ -1,6 +1,5 @@
 {extend name="teacher/index"/}
 {block name="title"}班级管理{/block}
-{block name="content"}
 <div id="page-inner">
     <div class="row">
         <div class="col-md-12">
@@ -79,7 +78,7 @@
         </nav>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper">
-            {block name="content"}
+
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
@@ -92,6 +91,7 @@
                         </ol>
                     </div>
                 </div>
+                {block name="content"}
                 <a href="{:url('add')}" class="btn btn-primary col-md-offset-11">
                     <li class="glyphicon glyphicon-plus"></li>&nbsp;添加</a>
                 <hr>
@@ -112,15 +112,15 @@
                                     {volist name="rooms" id="room"}
                                     <tr>
                                         <td>{$room->id}</td>
-                                        <td><a href="{:url('member',array('room_id'=>$room->id))}">{$room->name}</a>
+                                        <td><a href="{:url('member/index?room_id='.$room->id)}">{$room->name}</a>
                                         </td>
                                         <td>{$room->people_sum}</td>
                                         <td width="15%">
-                                            <a href="{:url('edit')}" class="btn btn-info btn-xs">
+                                            <a href="{:url('edit?id='.$room->id)}" class="btn btn-info btn-xs">
                                                 <li class="glyphicon glyphicon-pencil"></li>
                                                 编辑</a>&nbsp;&nbsp;
 
-                                            <a href="{:url('delete')}" class="btn btn-danger btn-xs">
+                                            <a href="{:url('delete?id='.$room->id)}" class="btn btn-danger btn-xs">
                                                 <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
                                         </td>
                                     </tr>
@@ -131,8 +131,9 @@
                         </div>
                     </div>
                 </div>
+                {/block}
             </div>
-            {/block}
+
         </div>
     </div>
 </div>
