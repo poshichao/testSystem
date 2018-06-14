@@ -17,8 +17,19 @@ class Room extends Model
         return $this->hasMany('Student','room_id','id');
     }
 
+    public function exam(){
+        return $this->hasMany('Exam','room_id','id');
+    }
+
     public function getMemberByID($id){
         $banner = $this->with('member')->find($id);
         return $banner;
     }
+
+
+    public function getExamByID($id){
+        $exam = $this->with('exam')->find($id);
+        return $exam;
+    }
+
 }
