@@ -1,17 +1,17 @@
 <!-- this is view/type/add.html -->
-{extend name="teacher/index"} {block name="title"} 题型管理 {/block} {block name="content"}
+{extend name="teacher/index"} {block name="title"} 课程管理 {/block} {block name="content"}
 <div id="page-inner">
     <div class="col-md-12">
         <ol class="breadcrumb">
             <li>
-                <a href="{:url('course/index')}">题型管理</a>
+                <a href="{:url('type/index')}">课程管理</a>
             </li>
             <li class="active">添加</li>
         </ol>
     </div>
     <form class="form-horizontal col-md-6 col-md-offset-3" action="{:url('insert')}" method="post">
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">题型名称</label>
+            <label for="inputEmail3" class="col-sm-2 control-label">课程名称</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputEmail3" placeholder="题型名称" name="name">
             </div>
