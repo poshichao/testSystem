@@ -70,6 +70,13 @@ class ItemController extends IndexController
     }
 
     public function delete() {
+        $itemId = Request::instance()->param('id/d');
+        $Item = Item::get($itemId);
 
+        if ($Item->delete()) {
+            return $this->success('删除成功！', url('index'));
+        } else {
+            return $this->error('删除失败！');
+        }
     }
 }
