@@ -103,8 +103,8 @@
                                             <td>{$teacher->sex}</td>
                                             <td>{$teacher->work_number}</td>
                                             <td>
-                                                {volist name="$teacher->rooms" id="room"}
-                                                {$room->getData('name')}    
+                                                {volist name="$teacher->courses()" id="course"}
+                                                {$course->getData('name')}    
                                                 {/volist}
                                             <td width="15%">
                                                 <a href="{:url('edit?id='.$teacher->id)}" class="btn btn-info btn-xs">
