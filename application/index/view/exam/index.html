@@ -26,6 +26,8 @@
                             <th>考试时间</th>
                             <th>班级编号</th>
                             <th>课程编号</th>
+                            <th>试卷编号</th>
+                            <th>试卷名称</th>
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -36,10 +38,25 @@
                             <td>{$exam->exam_time}</td>
                             <td>{$exam->room_id}</td>
                             <td>{$exam->course_id}</td>
-                            <td width="15%">
-                                <a href="{:url('edit?id='.$exam->id.'&room_id='.$exam->room_id)}" class="btn btn-info btn-xs">
-                                    <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;&nbsp;
-                                <a href="{:url('delete?id='.$exam->id.'&room_id='.$exam->room_id)}" class="btn btn-danger btn-xs">
+                            {eq name="$exam->paper" value=""}
+                            <td>未组卷</td>
+                            <td>未组卷</td>
+                            {else /}
+                            <td>{$exam->paper->id}</td>
+                            <td>
+                                <a href="{:url('paper/preview?id='.$exam->paper->id)}">{$exam->paper->name}</a>
+                            </td>
+                            {/eq}
+
+                            <td width="25%">
+                                <a href="{:url('merge?id='.$exam->id.'&room_id='.$exam->room_id)}"
+                                   class="btn btn-primary btn-xs">
+                                    <li class="glyphicon glyphicon-open"></li>&nbsp;组题</a>&nbsp;
+                                <a href="{:url('edit?id='.$exam->id.'&room_id='.$exam->room_id)}"
+                                   class="btn btn-info btn-xs">
+                                    <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;
+                                <a href="{:url('delete?id='.$exam->id.'&room_id='.$exam->room_id)}"
+                                   class="btn btn-danger btn-xs">
                                     <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
                             </td>
                         </tr>

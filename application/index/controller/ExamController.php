@@ -8,21 +8,29 @@
 
 namespace app\index\controller;
 
+use app\index\model\Content;
 use app\index\model\Exam;
+use app\index\model\Item;
+use app\index\model\Paper;
+use app\index\model\Paper_item;
 use app\index\model\Room;
 use think\Controller;
 use app\index\controller\IndexController;
+use think\Db;
 use think\Request;
 
 class ExamController extends IndexController
 {
     public function index() {
-        $room_id = Request::instance()->get('room_id');
-
+        $room_id = Request::instance()->param('id');
         $res = (new Room())->getExamByID($room_id);
-
-        $this->assign('exams', $res['exam']);
-
+        $exams = $res['exam'];
+        foreach ($exams as $exam){
+            if($exam->paper == null){
+                $exam->paper = "";
+            }
+        }
+        $this->assign('exams', $exams);
 
         return $this->fetch();
     }
@@ -95,5 +103,45 @@ class ExamController extends IndexController
         } else {
             return $this->error('保存失败！');
         }
+    }
+    public function merge(){
+        $Item = new Item();
+        $ExamId = Request::instance()->param('id/d');
+        $Items = $Item->select();
+
+        $this->assign('items', $Items);
+        $this->assign('ExamId', $ExamId);
+        return $this->fetch();
+    }
+    public function build(){
+        $ExamId = Request::instance()->param('id/d');
+        $check =input('post.check/a');
+        $name =input('post.name');
+        $time =input('post.time');
+
+
+        $Paper = new Paper();
+        $Paper->name = $name;
+        $Paper->time = $time;
+        $Paper->exam_id = $ExamId;
+
+
+        if ($Paper->validate()->save()) {
+            if(!empty($check)){
+                for($i=0;$i<count($check);$i++){
+                    $Paper_item = new Paper_item();
+                    $Paper_item->item_id = $check[$i];
+                    $Paper_item->paper_id = $Paper->id;
+                    $Paper_item->save();
+                }
+            }
+            return $this->success('保存成功！', url('index'));
+        } else {
+            return $this->error('保存失败！');
+        }
+
+
+
+
     }
 }

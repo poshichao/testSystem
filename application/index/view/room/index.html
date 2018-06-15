@@ -109,17 +109,16 @@
                                     {volist name="rooms" id="room"}
                                     <tr>
                                         <td>{$room->id}</td>
-                                        <td><a href="{:url('member/index?room_id='.$room->id)}">{$room->name}</a>
+                                        <td><a href="{:url('member/index?id='.$room->id)}">{$room->name}</a>
                                         </td>
                                         <td>{$room->people_sum}</td>
-                                        <td width="20%">
+                                        <td width="25%">
                                             <a href="{:url('exam/index?id='.$room->id)}" class="btn btn-primary btn-xs">
                                                 <li class="glyphicon glyphicon-file"></li>
                                                 考试</a>&nbsp;
 
                                             <a href="{:url('edit?id='.$room->id)}" class="btn btn-info btn-xs">
-                                                <li class="glyphicon glyphicon-pencil"></li>
-                                                编辑</a>&nbsp;&nbsp;
+                                                <li class="glyphicon glyphicon-pencil"></li> 编辑</a>&nbsp;
 
                                             <a href="{:url('delete?id='.$room->id)}" class="btn btn-danger btn-xs">
                                                 <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
