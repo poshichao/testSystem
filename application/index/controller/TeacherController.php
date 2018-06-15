@@ -29,6 +29,8 @@ class TeacherController extends IndexController {
 		$post = Request::instance()->post();
 
 		$Teacher = new Teacher();
+		$Course = Course::get(['name'=>$post['course']]);
+
 
 		$Teacher->name = $post['name'];
 		$Teacher->sex = $post['sex'];
@@ -36,7 +38,7 @@ class TeacherController extends IndexController {
 		$Teacher->password = $post['password'];
 
 		if ($Teacher->save()) {
-			$Teacher->courses()->save(['name'=>$post['course']]);
+			$Teacher->courses()->attach($Course->id);
 			return $this->success('保存成功！', 'index');
 		} else {
 			return $this->error('保存失败！');
@@ -49,7 +51,10 @@ class TeacherController extends IndexController {
 		if (is_null($Teacher = Teacher::get($teacherId))) {
 			return $this->error('未找到id为' . $teacherId . '的教师！');
 		}
+		$Course = new Course();
+		$courses = $Course->select();
 
+		$this->assign('courses', $courses);
 		$this->assign('Teacher', $Teacher);
 		return $this->fetch();
 
@@ -59,13 +64,16 @@ class TeacherController extends IndexController {
 		$post = Request::instance()->post();
 		$teacherId = Request::instance()->param('id/d');
 
+		$Course = Course::get(['name'=>$post['course']]);
+
 		$Teacher = Teacher::get($teacherId);
 		$Teacher->name = $post['name'];
 		$Teacher->sex = $post['sex'];
 		$Teacher->password = $post['password'];
 		$Teacher->work_number = $post['work_number'];
 
-		if ($Teacher->validate()->save()) {
+		if ($Teacher->save()) {
+			$Teacher->courses()->attach($Course->id);
 			return $this->success('保存成功！', url('index'));
 		} else {
 			return $this->error('保存失败！');
@@ -76,8 +84,13 @@ class TeacherController extends IndexController {
 		$teacherId = Request::instance()->param('id/d');
 
 		$Teacher = Teacher::get($teacherId);
+		
 		if (!is_null($Teacher)) {
 			if ($Teacher->delete()) {
+				$courses = $Teacher->courses;
+				foreach ($courses as $course) {
+					$Teacher->courses()->detach($course->id);
+				}
 				return $this->success('删除成功！', url('index'));
 			} else {
 				return $this->error('删除失败！');
