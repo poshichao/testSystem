@@ -18,8 +18,13 @@ class LoginController extends Controller {
 
 		$result = Common::login($work_number, $password);
 
+
 		if ($result) {
-			return $this->success('登录成功！', url('Teacher/index'));
+			if (Common::isTeacher()){
+				return $this->success('登录成功！', url('Teacher/index'));
+			} else {
+				return $this->success('登录成功！', url('Member/index'));
+			}
 		} else {
 			return $this->error('用户名或密码错误！', url('index'));
 		}

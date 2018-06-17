@@ -14,6 +14,8 @@ class IndexController extends Controller{
 		} else {
 			$teacherId = Session::get('teacherId');
 			$studentId = Session::get('studentId');
+			$isTeacher = Common::isTeacher();
+			$this->assign('isTeacher', $isTeacher);
 			$this->assign('teacherId', $teacherId);
 			$this->assign('studentId', $studentId);
 		}

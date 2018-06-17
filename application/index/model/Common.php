@@ -4,6 +4,7 @@ namespace app\index\model;
 use think\Model;
 use app\index\model\Teacher;
 use app\index\model\Student;
+use think\Session;
 
 class Common extends Model {
 	public static function login($work_number, $password) {
@@ -40,5 +41,21 @@ class Common extends Model {
 		session('teacherId', null);
 		session('studentId', null);
 		return true;
+	}
+
+	public static function isTeacher() {
+		if (Session::get('teacherId')) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public static function isStudent() {
+		if (Session::get('studentId')) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
