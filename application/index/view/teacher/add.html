@@ -37,11 +37,10 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">课程</label>
             <div class="col-sm-10">
-                <select class="form-control" name="course">
-                    {volist name="courses" id="course"}
-                    <option>{$course->name}</option>
-                    {/volist}
-                </select>
+                {volist name="courses" id="course"}
+                <input type="checkbox" name="course_id[]" id="course_id_{$course->id}" value="{$course->id}" />
+                <label for="course_id_{$course->id}">{$course->name}</label>
+                {/volist}
             </div>
         </div>
         <div class="form-group">
