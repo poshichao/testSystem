@@ -46,9 +46,18 @@
                         <a {eq name=':request()->controller()' value="Teacher" } class="active-menu" {/eq} href="{:url('teacher/index')}"><i class="fa fa-dashboard"></i> 教师管理</a>
                     </li>
                     {/eq}
+                    {eq name='isTeacher' value="true"}
                     <li>
                         <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} {eq name=':request()->controller()' value="Member"} class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i> 班级管理</a>
                     </li>
+                    {else/}
+                    <li>
+                        <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} {eq name=':request()->controller()' value="Member"} class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i> 我的班级</a>
+                    </li>
+                    <li>
+                        <a {eq name=':request()->controller()' value="Exam"} class="active-menu" {/eq} href="{:url('exam/index')}"><i class="fa fa-qrcode"></i>我的考试</a>
+                    </li>
+                    {/eq}
                     {eq name='isTeacher' value="true"}
                     <li>
                         <a {eq name=':request()->controller()' value="Course"} class="active-menu" {/eq} href="{:url('course/index')}"><i class="fa fa-qrcode"></i>课程管理</a>

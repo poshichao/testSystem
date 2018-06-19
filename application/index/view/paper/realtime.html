@@ -7,6 +7,10 @@
             </ol>
         </div>
     </div>
+    <h3 class="text-center">{$Paper->name}</h3>
+    <br/>
+    <h5 class="text-right">考试时间: {$Paper->time}分钟</h5>
+    <br/><br/><br/>
     <form action="{:url('insert')}" onsubmit="return submit_sure()" method="post">
         <table class="table table-striped table-bordered table-hover">
             <tbody>

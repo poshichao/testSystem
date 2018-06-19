@@ -1,17 +1,34 @@
 <!-- this is app/index/view/teacher/add.html -->
-{extend name="room/index"/} {block name="title"}班级管理--班级成员{/block} {block name="content"}
+{extend name="room/index"/}
+
+{eq name='isTeacher' value="true"}
+{block name="title"}班级管理--班级成员{/block}
+{else/}
+{block name="title"}我的班级--班级成员{/block}
+{/eq}
+
+{block name="content"}
 <div id="page-inner">
     <div class="row">
         <div class="col-md-12">
             <ol class="breadcrumb">
+
+                {eq name='isTeacher' value="true"}
                 <li><a href="../room/index.html">班级管理</a></li>
+                {else/}
+                <li><a href="../room/index.html">我的班级</a></li>
+                {/eq}
+
                 <li class="active">班级成员</li>
             </ol>
         </div>
     </div>
 
+    {eq name='isTeacher' value="true"}
     <a href="{:url('add')}" class="btn btn-primary col-md-offset-11">
         <li class="glyphicon glyphicon-plus"></li>&nbsp;添加</a>
+    {/eq}
+
     <hr>
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="panel panel-default">
@@ -33,10 +50,21 @@
                             <td>{$student->sex}</td>
                             <td>{$student->name}</td>
                             <td width="15%">
-                                <a href="{:url('edit?id='.$student->id.'&room_id='.$student->room_id)}" class="btn btn-info btn-xs">
+                                {eq name="isTeacher" value="true"}
+                                <a href="{:url('edit?id='.$student->id.'&room_id='.$student->room_id)}"
+                                   class="btn btn-info btn-xs">
                                     <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;&nbsp;
-                                <a href="{:url('delete?id='.$student->id.'&room_id='.$student->room_id)}" class="btn btn-danger btn-xs">
+                                <a href="{:url('delete?id='.$student->id.'&room_id='.$student->room_id)}"
+                                   class="btn btn-danger btn-xs">
                                     <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
+                                {else/}
+                                {eq name="studentId" value="$student->id"}
+
+                                <a href="{:url('edit?id='.$student->id.'&room_id='.$student->room_id)}"
+                                   class="btn btn-info btn-xs">
+                                    <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑信息</a>&nbsp;&nbsp;
+                                {/eq}
+                                {/eq}
                             </td>
                         </tr>
                         {/volist}
