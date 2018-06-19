@@ -65,8 +65,6 @@
                             {volist name="scores" id="score"}
                             {eq name="$score->exam_id" value="$exam->id"}
                             <td>{$score->score}</td>
-                            {else/}
-                            <td></td>
                             {/eq}
                             {/volist}
                             {/eq}

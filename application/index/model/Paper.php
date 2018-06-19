@@ -24,4 +24,7 @@ class Paper extends Model
         $paper = self::with('items')->find($id);
         return $paper;
     }
+    public function getPaperByExamID($id){
+        return $this->where('exam_id','=',$id)->find();
+    }
 }

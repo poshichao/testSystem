@@ -32,6 +32,7 @@ class ExamController extends IndexController
         $this->assign('exams', $exams);
         if(Common::isStudent()){
             $scores = (new Score())->getScoreByID(session('studentId'));
+//            return json($scores);
             $this->assign('scores', $scores);
         }
         return $this->fetch();

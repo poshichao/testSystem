@@ -36,9 +36,39 @@
         </div>
     </form>
 </div>
+<input type="hidden" value="{$ept}" id="ept">
 <script language="javascript">
     function submit_sure(){
         return confirm("确认现在交卷吗?") === true;
     }
+    function getTime(s) {
+        var t;
+        if(s > -1){
+            var hour = Math.floor(s/3600);
+            var min = Math.floor(s/60) % 60;
+            var sec = s % 60;
+            if(hour < 10) {
+                t = '0'+ hour + ":";
+            } else {
+                t = hour + ":";
+            }
+
+            if(min < 10){t += "0";}
+            t += min + ":";
+            if(sec < 10){t += "0";}
+            t += sec.toFixed(0);
+        }
+        return t;
+    }
+    getCurrentTimeOffset();
+    function getCurrentTimeOffset() {
+        var ts = Date.parse(new Date())/1000;
+        var ept=document.getElementById('ept').value;
+        var res = ept-ts;
+        getTime(res);
+        alert(getTime(res));
+
+    }
+
 </script>
 {/block}
