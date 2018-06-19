@@ -8,15 +8,14 @@
 
 namespace app\index\controller;
 
+use app\index\model\Common;
 use app\index\model\Content;
 use app\index\model\Exam;
 use app\index\model\Item;
 use app\index\model\Paper;
 use app\index\model\Paper_item;
 use app\index\model\Room;
-use think\Controller;
-use app\index\controller\IndexController;
-use think\Db;
+use app\index\model\Score;
 use think\Request;
 
 class ExamController extends IndexController
@@ -31,7 +30,10 @@ class ExamController extends IndexController
             }
         }
         $this->assign('exams', $exams);
-
+        if(Common::isStudent()){
+            $scores = (new Score())->getScoreByID(session('studentId'));
+            $this->assign('scores', $scores);
+        }
         return $this->fetch();
     }
 

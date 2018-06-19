@@ -36,8 +36,11 @@
                             <th>班级编号</th>
                             <th>课程编号</th>
                             <th>试卷编号</th>
-                            {/eq}
                             <th>试卷名称</th>
+                            {else/}
+                            <th>考试成绩</th>
+                            {/eq}
+
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -59,9 +62,13 @@
                             </td>
                             {/eq}
                             {else/}
-                            <td>
-                                {$exam->paper->name}
-                            </td>
+                            {volist name="scores" id="score"}
+                            {eq name="$score->exam_id" value="$exam->id"}
+                            <td>{$score->score}</td>
+                            {else/}
+                            <td></td>
+                            {/eq}
+                            {/volist}
                             {/eq}
                             {eq name="isTeacher" value="true"}
                             <td width="25%">
@@ -79,7 +86,7 @@
                             <td width="15%">
                                 <a href="{:url('paper/realtime?id='.$exam->paper->id)}"
                                    class="btn btn-primary btn-xs">
-                                    <li class="glyphicon glyphicon-file"></li>&nbsp;考试</a>&nbsp;
+                                    <li class="glyphicon glyphicon-file"></li>&nbsp;参加考试</a>&nbsp;
                             </td>
                             {/eq}
 
