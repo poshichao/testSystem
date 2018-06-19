@@ -41,12 +41,15 @@
             <div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
+                    {eq name='isTeacher' value="true"}
                     <li>
                         <a {eq name=':request()->controller()' value="Teacher" } class="active-menu" {/eq} href="{:url('teacher/index')}"><i class="fa fa-dashboard"></i> 教师管理</a>
                     </li>
+                    {/eq}
                     <li>
                         <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} {eq name=':request()->controller()' value="Member"} class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i> 班级管理</a>
                     </li>
+                    {eq name='isTeacher' value="true"}
                     <li>
                         <a {eq name=':request()->controller()' value="Course"} class="active-menu" {/eq} href="{:url('course/index')}"><i class="fa fa-qrcode"></i>课程管理</a>
                     </li>
@@ -64,6 +67,7 @@
                             </li>
                         </ul>
                     </li>
+                    {/eq}
                 </ul>
             </div>
         </nav>
@@ -94,7 +98,7 @@
                                             <th>姓名</th>
                                             <th>性别</th>
                                             <th>工号</th>
-                                            <th>课程</th>
+                                            <th>教授课程</th>
                                             <th>操作</th>
                                         </tr>
                                     </thead>
@@ -105,7 +109,7 @@
                                             <td>{$teacher->sex}</td>
                                             <td>{$teacher->work_number}</td>
                                             <td>
-                                                {volist name="$teacher->courses()" id="course"}
+                                                {volist name="$teacher->courses" id="course"}
                                                 {$course->getData('name')}    
                                                 {/volist}
                                             <td width="15%">
