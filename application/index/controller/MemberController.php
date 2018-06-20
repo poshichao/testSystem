@@ -13,7 +13,7 @@ use app\index\model\Room;
 use app\index\model\Student;
 use think\Request;
 
-class MemberController extends TeacherController
+class MemberController extends IndexController
 {
     public function index()
     {

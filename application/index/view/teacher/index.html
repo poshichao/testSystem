@@ -7,6 +7,8 @@
     <title>{block name="title"}教师管理{/block}</title>
     <!-- Bootstrap Styles-->
     <link href="/testSystem/public/static/assets/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="/testSystem/public/static/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
     <link href="/testSystem/public/static/assets/css/font-awesome.css" rel="stylesheet" />
     <!-- Morris Chart Styles-->
@@ -41,12 +43,21 @@
                 <ul class="nav" id="main-menu">
                     {eq name='isTeacher' value="true"}
                     <li>
-                        <a {eq name=':request()->controller()' value="Teacher" } class="active-menu" {/eq} href="{:url('teacher/index')}"><i class="fa fa-dashboard"></i> 教师管理</a>
+                        <a {eq name=':request()->controller()' value="Teacher" } class="active-menu" {/eq} href="{:url('teacher/index')}"><i class="fa fa-dashboard"></i>教师管理</a>
                     </li>
                     {/eq}
+                    {eq name='isTeacher' value="true"}
                     <li>
-                        <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} {eq name=':request()->controller()' value="Member"} class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i> 班级管理</a>
+                        <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} {eq name=':request()->controller()' value="Member"} class="active-menu" {/eq} href="{:url('room/index')}"><i class="fa fa-desktop"></i>班级管理</a>
                     </li>
+                    {else/}
+                    <li>
+                        <a {eq name=':request()->controller()' value="Room" } class="active-menu" {/eq} {eq name=':request()->controller()' value="Member"} class="active-menu" {/eq} href="{:url('member/index')}"><i class="fa fa-desktop"></i>我的班级</a>
+                    </li>
+                    <li>
+                        <a {eq name=':request()->controller()' value="Exam"} class="active-menu" {/eq} href="{:url('exam/index')}"><i class="fa fa-qrcode"></i>我的考试</a>
+                    </li>
+                    {/eq}
                     {eq name='isTeacher' value="true"}
                     <li>
                         <a {eq name=':request()->controller()' value="Course"} class="active-menu" {/eq} href="{:url('course/index')}"><i class="fa fa-qrcode"></i>课程管理</a>
@@ -138,6 +149,7 @@
     <script src="/testSystem/public/static/assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="/testSystem/public/static/assets/js/bootstrap.min.js"></script>
+    <script src="/testSystem/public/static/assets/js/bootstrap-datetimepicker.min.js"></script>
     <!-- Metis Menu Js -->
     <script src="/testSystem/public/static/assets/js/jquery.metisMenu.js"></script>
     <!-- Morris Chart Js -->

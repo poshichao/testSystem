@@ -7,14 +7,22 @@
     <div class="row">
         <div class="col-md-12">
             <ol class="breadcrumb">
+                {eq name="isTeacher" value="true"}
                 <li><a href="../room/index.html">班级管理</a></li>
                 <li class="active">考试管理</li>
+                {else/}
+                <li><a href="#">我的考试</a></li>
+                <li class="active">考试列表</li>
+                {/eq}
+
             </ol>
         </div>
     </div>
+    {eq name="isTeacher" value="true"}
     <a href="{:url('add')}" class="btn btn-primary col-md-offset-11">
         <li class="glyphicon glyphicon-plus"></li>&nbsp;添加</a>
     <hr>
+    {/eq}
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="panel panel-default">
             <div class="panel-body">
@@ -24,8 +32,15 @@
                         <tr class="info">
                             <th>考试名称</th>
                             <th>考试时间</th>
+                            {eq name="isTeacher" value="true"}
                             <th>班级编号</th>
                             <th>课程编号</th>
+                            <th>试卷编号</th>
+                            <th>试卷名称</th>
+                            {else/}
+                            <th>考试成绩</th>
+                            {/eq}
+
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -34,14 +49,45 @@
                         <tr>
                             <td>{$exam->name}</td>
                             <td>{$exam->exam_time}</td>
+                            {eq name="isTeacher" value="true"}
                             <td>{$exam->room_id}</td>
                             <td>{$exam->course_id}</td>
-                            <td width="15%">
-                                <a href="{:url('edit?id='.$exam->id.'&room_id='.$exam->room_id)}" class="btn btn-info btn-xs">
-                                    <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;&nbsp;
-                                <a href="{:url('delete?id='.$exam->id.'&room_id='.$exam->room_id)}" class="btn btn-danger btn-xs">
+                            {eq name="$exam->paper" value=""}
+                            <td>未组卷</td>
+                            <td>未组卷</td>
+                            {else /}
+                            <td>{$exam->paper->id}</td>
+                            <td>
+                                <a href="{:url('paper/preview?id='.$exam->paper->id)}">{$exam->paper->name}</a>
+                            </td>
+                            {/eq}
+                            {else/}
+                            {volist name="scores" id="score"}
+                            {eq name="$score->exam_id" value="$exam->id"}
+                            <td>{$score->score}</td>
+                            {/eq}
+                            {/volist}
+                            {/eq}
+                            {eq name="isTeacher" value="true"}
+                            <td width="25%">
+                                <a href="{:url('merge?id='.$exam->id.'&room_id='.$exam->room_id)}"
+                                   class="btn btn-primary btn-xs">
+                                    <li class="glyphicon glyphicon-open"></li>&nbsp;组题</a>&nbsp;
+                                <a href="{:url('edit?id='.$exam->id.'&room_id='.$exam->room_id)}"
+                                   class="btn btn-info btn-xs">
+                                    <li class="glyphicon glyphicon-pencil"></li>&nbsp;编辑</a>&nbsp;
+                                <a href="{:url('delete?id='.$exam->id.'&room_id='.$exam->room_id)}"
+                                   class="btn btn-danger btn-xs">
                                     <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
                             </td>
+                            {else/}
+                            <td width="15%">
+                                <a href="{:url('paper/realtime?id='.$exam->paper->id)}"
+                                   class="btn btn-primary btn-xs">
+                                    <li class="glyphicon glyphicon-file"></li>&nbsp;参加考试</a>&nbsp;
+                            </td>
+                            {/eq}
+
                         </tr>
                         {/volist}
                         </tbody>

@@ -10,3 +10,22 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+
+function msubstr($str , $start=0 , $length , $charset="utf-8",$suffix=true){
+    if(function_exists("mb_substr")){
+        if($suffix){
+            return mb_substr($str,$start,$length,$charset);
+        }
+        else {
+            return mb_substr($str, $start, $length, $charset);
+        }
+    }
+    elseif (function_exists('iconv_substr')) {
+        if($suffix){
+            return iconv_substr($str, $start, $length,$charset);
+        }
+        else{
+            return iconv_substr($str,$start,$length,$charset);
+        }
+    }
+}

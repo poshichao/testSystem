@@ -13,5 +13,8 @@ use think\Model;
 
 class Exam extends Model
 {
-
+    public function paper(){
+        $paper = $this->hasOne('Paper','exam_id','id');
+        return $paper;
+    }
 }

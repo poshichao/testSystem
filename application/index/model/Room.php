@@ -28,7 +28,7 @@ class Room extends Model
 
 
     public function getExamByID($id){
-        $exam = $this->with('exam')->find($id);
+        $exam = $this->with(['exam','exam.paper'])->find($id);
         return $exam;
     }
 

@@ -1,0 +1,85 @@
+{extend name="teacher/index"/} {block name="title"} 试卷管理 {/block} {block name="content"}
+<div id="page-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li>在线考试</li>
+                <li style="float: right;text-align: right">考试剩余时间：<span id="CountDown">00:00:00</span></li>
+            </ol>
+        </div>
+    </div>
+    <h3 class="text-center">{$Paper->name}</h3>
+    <br/>
+    <h5 class="text-right">考试时间: {$Paper->time}分钟</h5>
+    <br/><br/><br/>
+    <form id="AnswerForm" action="{:url('insert')}" onsubmit="return submit_sure()" method="post">
+        <table class="table table-striped table-bordered table-hover">
+            <tbody>
+
+            {volist name="items" id="item"}
+
+            <tr>
+                <td>{$i}. {$item->dry}</td>
+                <td>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" name="answer"></textarea>
+                    </div>
+                </td>
+            </tr>
+
+            {/volist}
+            </tbody>
+        </table>
+        <div class="form-group">
+            <div class="col-sm-offset-5">
+                <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-file"></i>&nbsp;交卷</button>
+            </div>
+        </div>
+    </form>
+</div>
+<input type="hidden" value="{$ept}" id="ept">
+<script src="/testSystem/public/static/assets/js/jquery-1.10.2.js"></script>
+<script language="javascript">
+    var ept=document.getElementById('ept').value;
+
+    function submit_sure(){
+        return confirm("确认现在交卷吗?") === true;
+    }
+    function getTime(s) {
+        var t;
+        if(s > -1){
+            var hour = Math.floor(s/3600);
+            var min = Math.floor(s/60) % 60;
+            var sec = s % 60;
+            if(hour < 10) {
+                t = '0'+ hour + ":";
+            } else {
+                t = hour + ":";
+            }
+
+            if(min < 10){t += "0";}
+            t += min + ":";
+            if(sec < 10){t += "0";}
+            t += sec.toFixed(0);
+        }
+        return t;
+    }
+
+    getCurrentTimeOffset();
+    var cd=self.setInterval("getCurrentTimeOffset()",1000);
+
+    function getCurrentTimeOffset() {
+        var ts = Date.parse(new Date())/1000;
+        var res = ept-ts;
+        if(res<=0){
+            window.clearInterval(cd);
+            document.getElementById("AnswerForm").submit();
+        }
+        $("#CountDown").text(getTime(res));
+
+    }
+
+
+
+</script>
+{/block}

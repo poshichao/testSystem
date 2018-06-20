@@ -1,0 +1,2529 @@
+{
+  "content": [
+    {
+      "section": "单选题",
+      "questions": [
+        {
+          "question": [
+            {
+              "options": [
+                {
+                  "content": "美国"
+                },
+                {
+                  "content": "巴西"
+                },
+                {
+                  "content": "古巴"
+                },
+                {
+                  "answer": "true",
+                  "content": "俄罗斯"
+                }
+              ],
+              "title": "2004年雅典奥运会中国女排决赛中艰难战胜（）队获得冠军。"
+            },
+            {
+              "options": [
+                {
+                  "content": "垫球"
+                },
+                {
+                  "content": "传球"
+                },
+                {
+                  "answer": "true",
+                  "content": "发球"
+                },
+                {
+                  "content": "扣球"
+                }
+              ],
+              "title": "（）是比赛的开始，也是进攻的开始。"
+            },
+            {
+              "options": [
+                {
+                  "content": "韩国"
+                },
+                {
+                  "answer": "true",
+                  "content": "中国"
+                },
+                {
+                  "content": "日本"
+                },
+                {
+                  "content": "前苏联"
+                }
+              ],
+              "title": "发明勾手飘球、小臂垫球和滚动接球等技术而5次获得世界冠军的女队是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "1980"
+                },
+                {
+                  "answer": "true",
+                  "content": "1981"
+                },
+                {
+                  "content": "1982"
+                },
+                {
+                  "content": "1984"
+                }
+              ],
+              "title": "（）年，中国女排顽强拼搏获得我国体育史上三大球的第一个世界冠军。"
+            },
+            {
+              "options": [
+                {
+                  "content": "3"
+                },
+                {
+                  "content": "4"
+                },
+                {
+                  "answer": "true",
+                  "content": "6"
+                },
+                {
+                  "content": "12"
+                }
+              ],
+              "title": "每一局比赛最多可以替换（）人次，可同时换1人次或多人次。"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "防守反击"
+                },
+                {
+                  "content": "一次攻"
+                },
+                {
+                  "content": "二传球到位"
+                },
+                {
+                  "content": "四号位强攻"
+                }
+              ],
+              "title": "垫球是保证接发球进攻和（）的主要技术动作。"
+            },
+            {
+              "options": [
+                {
+                  "content": "吊球"
+                },
+                {
+                  "content": "发球"
+                },
+                {
+                  "answer": "true",
+                  "content": "扣球"
+                },
+                {
+                  "content": "拦网"
+                }
+              ],
+              "title": "排球比赛中最积极、最有效的进攻手段是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "第一裁判员"
+                },
+                {
+                  "content": "第二裁判员"
+                },
+                {
+                  "content": "纪录裁判员"
+                },
+                {
+                  "content": "司线员"
+                }
+              ],
+              "title": "对于持球、连击的判罚只有（）有权鸣哨，其他裁判员无权判罚。"
+            },
+            {
+              "options": [
+                {
+                  "content": "连击"
+                },
+                {
+                  "answer": "true",
+                  "content": "4次击球犯规"
+                },
+                {
+                  "content": "持球"
+                },
+                {
+                  "content": "界外球"
+                }
+              ],
+              "title": "比赛过程中，每队最多击球3次（拦网除外），一个队连续4次击球则判为？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "防反"
+                },
+                {
+                  "answer": "true",
+                  "content": "一攻"
+                },
+                {
+                  "content": "推攻"
+                },
+                {
+                  "content": "快攻"
+                }
+              ],
+              "title": "接发球进攻也称为？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "后排攻"
+                },
+                {
+                  "content": "后排快攻"
+                },
+                {
+                  "answer": "true",
+                  "content": "发球"
+                },
+                {
+                  "content": "击球"
+                }
+              ],
+              "title": "后排右队员在发球区将球击出而进入比赛的行动，称为？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "发球掩护"
+                },
+                {
+                  "answer": "true",
+                  "content": "位置错误"
+                },
+                {
+                  "content": "后排进攻犯规"
+                },
+                {
+                  "content": "自由人犯规"
+                }
+              ],
+              "title": "发球时，第二裁判员应看接发球一方是否有（）。"
+            },
+            {
+              "options": [
+                {
+                  "content": "第一裁判员"
+                },
+                {
+                  "answer": "true",
+                  "content": "第二裁判员"
+                },
+                {
+                  "content": "纪录裁判员"
+                },
+                {
+                  "content": "司线员"
+                }
+              ],
+              "title": "判断过中线犯规主要是（）的职责。"
+            },
+            {
+              "options": [
+                {
+                  "content": "甲方"
+                },
+                {
+                  "answer": "true",
+                  "content": "乙方"
+                },
+                {
+                  "content": "双方"
+                },
+                {
+                  "content": "双方都不"
+                }
+              ],
+              "title": "对球在球网上空双方同时击球的处理，如球落在甲方，判（）得分。"
+            },
+            {
+              "options": [
+                {
+                  "content": "拦网犯规"
+                },
+                {
+                  "answer": "true",
+                  "content": "过网击球犯规"
+                },
+                {
+                  "content": "后排进攻犯规"
+                },
+                {
+                  "content": "双方持球犯规"
+                }
+              ],
+              "title": "判断（），应主要以触球点是否在对方场区上空作为根据。"
+            },
+            {
+              "options": [
+                {
+                  "content": "进入对方场区"
+                },
+                {
+                  "answer": "true",
+                  "content": "过中线犯规"
+                },
+                {
+                  "content": "干扰比赛"
+                },
+                {
+                  "content": "触网犯规"
+                }
+              ],
+              "title": "比赛中，队员一只（两只）脚或手完全越过中线触及对方场区应判为？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "右边"
+                },
+                {
+                  "content": "左边"
+                },
+                {
+                  "content": "中间"
+                },
+                {
+                  "content": "端线"
+                }
+              ],
+              "title": "队员位置关系为同排队员，每一名右边队员至少有一只脚的一部分，比同排中间队员的双脚距（）线更近。"
+            },
+            {
+              "options": [
+                {
+                  "content": "右边"
+                },
+                {
+                  "answer": "true",
+                  "content": "左边"
+                },
+                {
+                  "content": "中间"
+                },
+                {
+                  "content": "端线"
+                }
+              ],
+              "title": "队员位置关系为同排队员，每一名左边队员至少有一只脚的一部分，比同排中间队员的双脚距（）线更近。"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "前交叉战术"
+                },
+                {
+                  "content": "快球掩护拉开战术"
+                },
+                {
+                  "content": "后交叉战术"
+                },
+                {
+                  "content": "围绕战术"
+                }
+              ],
+              "title": "四号位队员扣快球，三号位队员从四号位队员身后交叉跑动扣一般低球的战术称为？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "前交叉战术"
+                },
+                {
+                  "answer": "true",
+                  "content": "快球掩护拉开战术"
+                },
+                {
+                  "content": "后交叉战术"
+                },
+                {
+                  "content": "围绕战术"
+                }
+              ],
+              "title": "三号位队员上前扣快球掩护四号位队员扣拉开球的战术称为？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "准备姿势和移动"
+                },
+                {
+                  "content": "传球"
+                },
+                {
+                  "content": "垫球"
+                },
+                {
+                  "content": "拦网"
+                }
+              ],
+              "title": "下列排球技术中属于无球技术的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "3米"
+                },
+                {
+                  "content": "6米"
+                },
+                {
+                  "answer": "true",
+                  "content": "9米"
+                },
+                {
+                  "content": "2.5米"
+                }
+              ],
+              "title": "发球区的宽度是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "3米"
+                },
+                {
+                  "content": "6米"
+                },
+                {
+                  "content": "9米"
+                },
+                {
+                  "content": "2.5米"
+                }
+              ],
+              "title": "进攻限制线距离中线是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "30秒"
+                },
+                {
+                  "answer": "true",
+                  "content": "60秒"
+                },
+                {
+                  "content": "50秒"
+                },
+                {
+                  "content": "25秒"
+                }
+              ],
+              "title": "技术暂停的时间为？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "30秒"
+                },
+                {
+                  "content": "60秒"
+                },
+                {
+                  "content": "50秒"
+                },
+                {
+                  "content": "25秒"
+                }
+              ],
+              "title": "普通暂停的时间为？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "5局3胜制"
+                },
+                {
+                  "content": "3局两2胜制"
+                },
+                {
+                  "content": "7局4胜制"
+                },
+                {
+                  "content": "1局决胜"
+                }
+              ],
+              "title": "正式排球比赛一般采用？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "3"
+                },
+                {
+                  "content": "6"
+                },
+                {
+                  "content": "2"
+                },
+                {
+                  "content": "次数不限"
+                }
+              ],
+              "title": "比赛中，每队在一次进攻中最多可以击球（）次（拦网除外）。"
+            },
+            {
+              "options": [
+                {
+                  "content": "捞球"
+                },
+                {
+                  "content": "推球"
+                },
+                {
+                  "answer": "true",
+                  "content": "脚踢球"
+                },
+                {
+                  "content": "按球"
+                }
+              ],
+              "title": "排球比赛中，下列击球动作不应判作犯规的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "2次"
+                },
+                {
+                  "content": "3次"
+                },
+                {
+                  "content": "4次"
+                },
+                {
+                  "content": "6次"
+                }
+              ],
+              "title": "比赛中每队每局暂停的次数最多为？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "食指和中指"
+                },
+                {
+                  "answer": "true",
+                  "content": "拇指、食指和中指"
+                },
+                {
+                  "content": "拇指和食指"
+                },
+                {
+                  "content": "拇指、食指、中指和无名指"
+                }
+              ],
+              "title": "传球技术的手型，主要是以（）几个手指来负担球的压力。"
+            },
+            {
+              "options": [
+                {
+                  "content": "队员单手按在中线上"
+                },
+                {
+                  "answer": "true",
+                  "content": "队员臀部坐在中线上，且有部分触及对方场区"
+                },
+                {
+                  "content": "队员脚踩在中线上"
+                },
+                {
+                  "content": "队员双手按在中线上"
+                }
+              ],
+              "title": "下列行为属于过中线犯规的有？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "11"
+                },
+                {
+                  "answer": "true",
+                  "content": "15"
+                },
+                {
+                  "content": "21"
+                },
+                {
+                  "content": "25"
+                }
+              ],
+              "title": "决胜局中，当一队赢得（）分且领先对方2分，则为该队胜这一场比赛。"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "2"
+                },
+                {
+                  "content": "3"
+                },
+                {
+                  "content": "4"
+                },
+                {
+                  "content": "6"
+                }
+              ],
+              "title": "组织“边二传”进攻战术时，二传队员应站在（）号位进行。"
+            },
+            {
+              "options": [
+                {
+                  "content": "队员不允许对对方的发球进行拦网"
+                },
+                {
+                  "content": "球击中网柱应判球出界"
+                },
+                {
+                  "answer": "true",
+                  "content": "自由防守队员不能将球垫过网"
+                },
+                {
+                  "content": "拦网队员可以将手伸过网"
+                }
+              ],
+              "title": "下列说法错误的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "前排左侧位置"
+                },
+                {
+                  "content": "后排右侧位置"
+                },
+                {
+                  "content": "前排右侧位置"
+                },
+                {
+                  "answer": "true",
+                  "content": "后排左侧位置"
+                }
+              ],
+              "title": "场上的5号位是指？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "球与球网"
+                },
+                {
+                  "answer": "true",
+                  "content": "人与球"
+                },
+                {
+                  "content": "人与球网"
+                },
+                {
+                  "content": "人、球与球网"
+                }
+              ],
+              "title": "移动的目的是为了迅速地接近球，选好（）的合理位置。"
+            },
+            {
+              "options": [
+                {
+                  "content": "中国队"
+                },
+                {
+                  "answer": "true",
+                  "content": "日本队"
+                },
+                {
+                  "content": "韩国队"
+                },
+                {
+                  "content": "印度队"
+                }
+              ],
+              "title": "第一个获得世界排球冠军的亚洲球队是（），其也被称为 “东洋魔女”。"
+            },
+            {
+              "options": [
+                {
+                  "content": "不判球出界，比赛继续进行"
+                },
+                {
+                  "answer": "true",
+                  "content": "判球出界，对方得分"
+                },
+                {
+                  "content": "重新发球"
+                },
+                {
+                  "content": "判双方争球"
+                }
+              ],
+              "title": "发球队员发出的球从标志杆外侧进入对方场区，此时（）。"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "2"
+                },
+                {
+                  "content": "3"
+                },
+                {
+                  "content": "4"
+                },
+                {
+                  "content": "6"
+                }
+              ],
+              "title": "每局比赛中，每队可以请求（）次普通暂停。"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "2"
+                },
+                {
+                  "content": "3"
+                },
+                {
+                  "content": "4"
+                },
+                {
+                  "content": "6"
+                }
+              ],
+              "title": "每局比赛中，每队可以有（）次技术暂停。"
+            },
+            {
+              "options": [
+                {
+                  "content": "8"
+                },
+                {
+                  "answer": "true",
+                  "content": "9"
+                },
+                {
+                  "content": "10"
+                },
+                {
+                  "content": "12"
+                }
+              ],
+              "title": "决胜局比赛中，当领先队赢得（）分时交换场地，不休息，继续比赛。"
+            },
+            {
+              "options": [
+                {
+                  "content": "记录员"
+                },
+                {
+                  "answer": "true",
+                  "content": "广播员"
+                },
+                {
+                  "content": "司线员"
+                },
+                {
+                  "content": "第二裁判员"
+                }
+              ],
+              "title": "下列工作人员中，不属于裁判人员的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "若球被对方正常击起，则比赛继续进行"
+                },
+                {
+                  "content": "判发球队员击球犯规，对方得分"
+                },
+                {
+                  "content": "判重新发球"
+                },
+                {
+                  "content": "若对方没有接起，则判发球违例"
+                }
+              ],
+              "title": "比赛中，发球队员发出的球碰到球网上沿后，进入对方场区，以下说法正确的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "按照逆时针方向轮转一个位置"
+                },
+                {
+                  "content": "换人发球"
+                },
+                {
+                  "content": "继续发球"
+                },
+                {
+                  "answer": "true",
+                  "content": "按顺时针方向轮转一个位置"
+                }
+              ],
+              "title": "当接发球队获得发球权时，以下做法正确的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "自由防守队员的服装颜色必须区别于其他队员"
+                },
+                {
+                  "content": "球压线，应判界内球"
+                },
+                {
+                  "answer": "true",
+                  "content": "比赛中球触及标志杆继续比赛"
+                },
+                {
+                  "content": "暂停时队员必须离开比赛场区"
+                }
+              ],
+              "title": "下列叙述不正确的一个是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "2"
+                },
+                {
+                  "content": "3"
+                },
+                {
+                  "content": "4"
+                },
+                {
+                  "answer": "true",
+                  "content": "5"
+                }
+              ],
+              "title": "排球场地的线宽为（）厘米。"
+            },
+            {
+              "options": [
+                {
+                  "content": "世界排球锦标赛"
+                },
+                {
+                  "content": "世界杯赛"
+                },
+                {
+                  "content": "奥运会排球赛"
+                },
+                {
+                  "answer": "true",
+                  "content": "世界排球联赛"
+                }
+              ],
+              "title": "开展最早、规模最大的世界性排球比赛是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "力量型"
+                },
+                {
+                  "content": "进攻型"
+                },
+                {
+                  "content": "技巧型"
+                },
+                {
+                  "content": "防守型"
+                }
+              ],
+              "title": "1949年第一届世界男排锦标赛，（）排球崭露头角。"
+            },
+            {
+              "options": [
+                {
+                  "content": "后中部"
+                },
+                {
+                  "answer": "true",
+                  "content": "后中上部"
+                },
+                {
+                  "content": "后上部"
+                },
+                {
+                  "content": "后中下部"
+                }
+              ],
+              "title": "正面扣球时，应以全手掌击打球的（）部位。"
+            },
+            {
+              "options": [
+                {
+                  "content": "后中部"
+                },
+                {
+                  "content": "后中上部"
+                },
+                {
+                  "answer": "true",
+                  "content": "后上部"
+                },
+                {
+                  "content": "后中下部"
+                }
+              ],
+              "title": "扣快球时，应以全手掌击打球的（）部位。"
+            }
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "section": "多选题",
+      "questions": [
+        {
+          "question": [
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "传球"
+                },
+                {
+                  "answer": "true",
+                  "content": "拦网"
+                },
+                {
+                  "answer": "true",
+                  "content": "垫球"
+                },
+                {
+                  "answer": "true",
+                  "content": "扣球"
+                }
+              ],
+              "title": "以下哪些属于排球五大基本技术？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "垫球"
+                },
+                {
+                  "answer": "true",
+                  "content": "传球"
+                },
+                {
+                  "answer": "true",
+                  "content": "挡球"
+                },
+                {
+                  "answer": "true",
+                  "content": "脚踢球"
+                }
+              ],
+              "title": "接发球时可以用以下哪些技术动作？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "检查体育教学和运动训练的成绩"
+                },
+                {
+                  "answer": "true",
+                  "content": "丰富师生课余文化生活"
+                },
+                {
+                  "content": "改善学校办学条件"
+                },
+                {
+                  "answer": "true",
+                  "content": "促进学校精神文明建设"
+                }
+              ],
+              "title": "学校开展体育竞赛活动，不仅可以发挥宣传教育作用，推动体育事业的发展，还可以？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "二传"
+                },
+                {
+                  "answer": "true",
+                  "content": "进攻"
+                },
+                {
+                  "answer": "true",
+                  "content": "扣球"
+                },
+                {
+                  "answer": "true",
+                  "content": "调整二传"
+                }
+              ],
+              "title": "比赛中接应二传的主要任务叙述错误的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "发球"
+                },
+                {
+                  "answer": "true",
+                  "content": "扣球"
+                },
+                {
+                  "answer": "true",
+                  "content": "拦网"
+                },
+                {
+                  "content": "传球"
+                }
+              ],
+              "title": "自由人在场上不能做的技术动作有？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "1、2"
+                },
+                {
+                  "answer": "true",
+                  "content": "3、6"
+                },
+                {
+                  "answer": "true",
+                  "content": "4、5"
+                },
+                {
+                  "content": "5、6"
+                }
+              ],
+              "title": "排球比赛场上站位同列的是哪几个位置？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "便于一传"
+                },
+                {
+                  "answer": "true",
+                  "content": "便于二传"
+                },
+                {
+                  "content": "战术变化多"
+                },
+                {
+                  "content": "前排进攻点多"
+                }
+              ],
+              "title": "采用中一二进攻阵形的优点是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "上手发球"
+                },
+                {
+                  "answer": "true",
+                  "content": "下手发球"
+                },
+                {
+                  "content": "跳发球"
+                },
+                {
+                  "content": "正面发球"
+                }
+              ],
+              "title": "排球发球技术包括？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "跨步移动"
+                },
+                {
+                  "answer": "true",
+                  "content": "并步移动"
+                },
+                {
+                  "answer": "true",
+                  "content": "交叉步移动"
+                },
+                {
+                  "answer": "true",
+                  "content": "跑步"
+                }
+              ],
+              "title": "移动的步法有哪些？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "拇指"
+                },
+                {
+                  "answer": "true",
+                  "content": "食指和中指"
+                },
+                {
+                  "content": "无名指"
+                },
+                {
+                  "content": "小指"
+                }
+              ],
+              "title": "传球技术的手型，主要是以哪几个手指来负担球的压力？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "强攻"
+                },
+                {
+                  "answer": "true",
+                  "content": "反攻"
+                },
+                {
+                  "answer": "true",
+                  "content": "保攻"
+                },
+                {
+                  "answer": "true",
+                  "content": "推攻"
+                }
+              ],
+              "title": "排球战术系统除“一攻”外还有？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "抛球稳"
+                },
+                {
+                  "content": "抛球高"
+                },
+                {
+                  "answer": "true",
+                  "content": "击球准"
+                },
+                {
+                  "answer": "true",
+                  "content": "全身协调用力"
+                }
+              ],
+              "title": "发球应注意的几点是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "快板球"
+                },
+                {
+                  "answer": "true",
+                  "content": "短平快球"
+                },
+                {
+                  "answer": "true",
+                  "content": "时间差进攻"
+                },
+                {
+                  "answer": "true",
+                  "content": "位置差进攻"
+                }
+              ],
+              "title": "日本男排创造的技术说法错误的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "拦发球"
+                },
+                {
+                  "answer": "true",
+                  "content": "对方进攻前手过网拦住球"
+                },
+                {
+                  "answer": "true",
+                  "content": "后排队员在网前拦住对方进攻球"
+                },
+                {
+                  "content": "拦二传吊球"
+                }
+              ],
+              "title": "下列属拦网犯规的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "4"
+                },
+                {
+                  "answer": "true",
+                  "content": "5"
+                },
+                {
+                  "content": "6"
+                },
+                {
+                  "answer": "true",
+                  "content": "7"
+                }
+              ],
+              "title": "在正式排球比赛中，每局每队有几次换人机会，以下说法错误的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "1"
+                },
+                {
+                  "content": "2"
+                },
+                {
+                  "answer": "true",
+                  "content": "3"
+                },
+                {
+                  "answer": "true",
+                  "content": "4"
+                }
+              ],
+              "title": "比赛中击球3次必须过网，一个队员最多能击几次球，错误的选项是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "1"
+                },
+                {
+                  "answer": "true",
+                  "content": "2"
+                },
+                {
+                  "answer": "true",
+                  "content": "3"
+                },
+                {
+                  "answer": "true",
+                  "content": "4"
+                }
+              ],
+              "title": "排球一局比赛中替补队员有几次上场机会，以下错误的选项是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "1分钟"
+                },
+                {
+                  "answer": "true",
+                  "content": "5分钟"
+                },
+                {
+                  "answer": "true",
+                  "content": "10分钟"
+                },
+                {
+                  "answer": "true",
+                  "content": "30分钟"
+                }
+              ],
+              "title": "比赛中每次暂停的时间错误的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "上手传球"
+                },
+                {
+                  "content": "正面双手垫球"
+                },
+                {
+                  "answer": "true",
+                  "content": "扣球"
+                },
+                {
+                  "answer": "true",
+                  "content": "杀球"
+                }
+              ],
+              "title": "以下不是最常见也不是最有效的接发球技术是？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "前排"
+                },
+                {
+                  "answer": "true",
+                  "content": "后排"
+                },
+                {
+                  "answer": "true",
+                  "content": "前后排"
+                },
+                {
+                  "content": "其他"
+                }
+              ],
+              "title": "自由防守队员不可以替换哪个位置上的任何队员？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "2号位"
+                },
+                {
+                  "answer": "true",
+                  "content": "3号位"
+                },
+                {
+                  "answer": "true",
+                  "content": "5号位"
+                },
+                {
+                  "answer": "true",
+                  "content": "6号位"
+                }
+              ],
+              "title": "组织“边二传”进攻战术时，二传队员不应站在几号位？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "连击犯规"
+                },
+                {
+                  "answer": "true",
+                  "content": "持球犯规"
+                },
+                {
+                  "answer": "true",
+                  "content": "4次击球犯规"
+                },
+                {
+                  "answer": "true",
+                  "content": "借助击球犯规"
+                }
+              ],
+              "title": "在排球比赛中，一名队员（拦网队员除外）连续击球2次或连续触及他身体的不同部位（第一次击球，同一个动作除外），不属于（）？"
+            },
+            {
+              "options": [
+                {
+                  "content": "稍蹲"
+                },
+                {
+                  "answer": "true",
+                  "content": "半蹲"
+                },
+                {
+                  "answer": "true",
+                  "content": "低蹲"
+                },
+                {
+                  "answer": "true",
+                  "content": "全蹲"
+                }
+              ],
+              "title": "接发球时，准备姿势一般不采用（）？"
+            },
+            {
+              "options": [
+                {
+                  "content": "争取到位"
+                },
+                {
+                  "answer": "true",
+                  "content": "争取垫高"
+                },
+                {
+                  "answer": "true",
+                  "content": "力争不失分"
+                },
+                {
+                  "content": "争取胜利"
+                }
+              ],
+              "title": "接发球的目的描述错误的是（）？"
+            },
+            {
+              "options": [
+                {
+                  "content": "比较大"
+                },
+                {
+                  "answer": "true",
+                  "content": "不如攻手"
+                },
+                {
+                  "answer": "true",
+                  "content": "作用较小"
+                },
+                {
+                  "answer": "true",
+                  "content": "不如防守"
+                }
+              ],
+              "title": "比赛中二传手的作用（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "5米"
+                },
+                {
+                  "answer": "true",
+                  "content": "8米"
+                },
+                {
+                  "content": "至无障碍区的终端"
+                },
+                {
+                  "answer": "true",
+                  "content": "无限长"
+                }
+              ],
+              "title": "发球区的长度叙述错误的是（）？"
+            },
+            {
+              "options": [
+                {
+                  "content": "3"
+                },
+                {
+                  "answer": "true",
+                  "content": "4"
+                },
+                {
+                  "answer": "true",
+                  "content": "6"
+                },
+                {
+                  "answer": "true",
+                  "content": "10"
+                }
+              ],
+              "title": "排球场地中，距离中线几米处，有一条平行线叫进攻线，以下选项描述错误的是（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "组织进攻"
+                },
+                {
+                  "answer": "true",
+                  "content": "进攻战术"
+                },
+                {
+                  "content": "一攻"
+                },
+                {
+                  "answer": "true",
+                  "content": "防反"
+                }
+              ],
+              "title": "排球比赛中的接发球及其进攻，也称“（）”，它包含着防守和进攻两方面。以下名称错误的是（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "1"
+                },
+                {
+                  "content": "2"
+                },
+                {
+                  "answer": "true",
+                  "content": "3"
+                },
+                {
+                  "answer": "true",
+                  "content": "4"
+                }
+              ],
+              "title": "新规则修改后的排球比赛，前四局每局有2次请求暂停外，另有（）次的技术暂停，以下选项描述错误的是（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "2号位"
+                },
+                {
+                  "answer": "true",
+                  "content": "3号位"
+                },
+                {
+                  "content": "4号位"
+                },
+                {
+                  "answer": "true",
+                  "content": "各定各位"
+                }
+              ],
+              "title": "双人拦对方2号位进攻时不应由（）来定位？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "100多个"
+                },
+                {
+                  "content": "150多个"
+                },
+                {
+                  "answer": "true",
+                  "content": "200多个"
+                },
+                {
+                  "answer": "true",
+                  "content": "300多个"
+                }
+              ],
+              "title": "国际排球联合会（FIVB）至今已有会员国数量描述不正确的是（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "1"
+                },
+                {
+                  "answer": "true",
+                  "content": "2"
+                },
+                {
+                  "answer": "true",
+                  "content": "3"
+                },
+                {
+                  "answer": "true",
+                  "content": "4"
+                }
+              ],
+              "title": "新规则修改后的排球比赛，第5局请求暂停次数不正确的是（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "起伏"
+                },
+                {
+                  "content": "平稳"
+                },
+                {
+                  "answer": "true",
+                  "content": "下降"
+                },
+                {
+                  "answer": "true",
+                  "content": "上升"
+                }
+              ],
+              "title": "进行移动时，身体重心不应保持（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "球碰到障碍物"
+                },
+                {
+                  "answer": "true",
+                  "content": "界内球"
+                },
+                {
+                  "content": "界外球"
+                },
+                {
+                  "answer": "true",
+                  "content": "球在场内"
+                }
+              ],
+              "title": "裁判员两臂屈肘上举手掌向后摆动不是指（）？"
+            },
+            {
+              "options": [
+                {
+                  "content": "界内球"
+                },
+                {
+                  "answer": "true",
+                  "content": "界外球"
+                },
+                {
+                  "answer": "true",
+                  "content": "界中球"
+                },
+                {
+                  "answer": "true",
+                  "content": "界下球"
+                }
+              ],
+              "title": "比赛中球落线上，裁判不应判为（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "古巴女排"
+                },
+                {
+                  "answer": "true",
+                  "content": "意大利男排"
+                },
+                {
+                  "answer": "true",
+                  "content": "原苏联男排"
+                },
+                {
+                  "content": "中国女排"
+                }
+              ],
+              "title": "迄今为止，连续获得世界锦标赛、世界杯赛、奥运会排球赛等三项重大赛事冠军次数最多的不是以下哪个选项？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "平行挥击"
+                },
+                {
+                  "answer": "true",
+                  "content": "弧形挥击"
+                },
+                {
+                  "content": "向前上挥"
+                },
+                {
+                  "answer": "true",
+                  "content": "水平用力"
+                }
+              ],
+              "title": "大力发球时，手臂不应（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "2号位球"
+                },
+                {
+                  "answer": "true",
+                  "content": "3号位球"
+                },
+                {
+                  "content": "4号位球"
+                },
+                {
+                  "answer": "true",
+                  "content": "5号位球"
+                }
+              ],
+              "title": "主攻队员在比赛中所扣的球大多数不是（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "场地的中间"
+                },
+                {
+                  "answer": "true",
+                  "content": "场地的中线"
+                },
+                {
+                  "content": "限止线"
+                },
+                {
+                  "answer": "true",
+                  "content": "场地外界"
+                }
+              ],
+              "title": "排球场区有前场区与后场区之分，它们不是以什么来区分的（）？"
+            },
+            {
+              "options": [
+                {
+                  "content": "威廉摩根"
+                },
+                {
+                  "answer": "true",
+                  "content": "奈史密斯"
+                },
+                {
+                  "answer": "true",
+                  "content": "鲍尔利伯"
+                },
+                {
+                  "answer": "true",
+                  "content": "阿科斯塔"
+                }
+              ],
+              "title": "排球运动不是由以下哪些人发明的（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "古巴女排"
+                },
+                {
+                  "answer": "true",
+                  "content": "意大利男排"
+                },
+                {
+                  "answer": "true",
+                  "content": "原苏联男排"
+                },
+                {
+                  "content": "中国女排"
+                }
+              ],
+              "title": "迄今为止，连续获得世界锦标赛、世界杯赛、奥运会排球赛等三项重大赛事冠军次数最多的不是以下哪个选项？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "第一裁判"
+                },
+                {
+                  "content": "第二裁判"
+                },
+                {
+                  "answer": "true",
+                  "content": "记录台"
+                },
+                {
+                  "answer": "true",
+                  "content": "保洁员"
+                }
+              ],
+              "title": "某队请求暂停与换人时，不应向哪个裁判员提出（）？"
+            },
+            {
+              "options": [
+                {
+                  "content": "交叉法"
+                },
+                {
+                  "answer": "true",
+                  "content": "贝格尔"
+                },
+                {
+                  "content": "配对法"
+                },
+                {
+                  "answer": "true",
+                  "content": "固定轮转法"
+                }
+              ],
+              "title": "单循环比赛编排方法有（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "限制后排队员进攻起跳点"
+                },
+                {
+                  "answer": "true",
+                  "content": "限制自由人传球组织进攻"
+                },
+                {
+                  "content": "限制前排队员到后场区"
+                },
+                {
+                  "content": "限制后排队员到前场区救球"
+                }
+              ],
+              "title": "场区的前后划分，是为了限制比赛中的哪些技术动作？（）"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "捞球"
+                },
+                {
+                  "content": "脚击球"
+                },
+                {
+                  "answer": "true",
+                  "content": "单手击球"
+                },
+                {
+                  "content": "头顶球"
+                }
+              ],
+              "title": "排球比赛中，下列击球动应判作犯规的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "击球点是否在对方场区空间"
+                },
+                {
+                  "answer": "true",
+                  "content": "击球点是否在自己场区空间"
+                },
+                {
+                  "answer": "true",
+                  "content": "击球点是否在全场空间"
+                },
+                {
+                  "answer": "true",
+                  "content": "击球点是否不在全场空"
+                }
+              ],
+              "title": "判断过网击球的依据不是（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "20分"
+                },
+                {
+                  "answer": "true",
+                  "content": "21分"
+                },
+                {
+                  "answer": "true",
+                  "content": "23分"
+                },
+                {
+                  "content": "25分"
+                }
+              ],
+              "title": "排球比赛每局比分描述不正确的是？（）"
+            },
+            {
+              "options": [
+                {
+                  "content": "绷紧"
+                },
+                {
+                  "answer": "true",
+                  "content": "放松"
+                },
+                {
+                  "answer": "true",
+                  "content": "扭转"
+                },
+                {
+                  "answer": "true",
+                  "content": "挤压"
+                }
+              ],
+              "title": "拦网跳起空中后，腰腹不应（）？"
+            },
+            {
+              "options": [
+                {
+                  "answer": "true",
+                  "content": "1次"
+                },
+                {
+                  "answer": "true",
+                  "content": "3次"
+                },
+                {
+                  "content": "6次"
+                },
+                {
+                  "answer": "true",
+                  "content": "9次"
+                }
+              ],
+              "title": "排球比赛中，每队每局除自由人外，最多能换人次数错误的是（）？"
+            },
+            {
+              "options": [
+                {
+                  "content": "阻止线"
+                },
+                {
+                  "answer": "true",
+                  "content": "中线"
+                },
+                {
+                  "answer": "true",
+                  "content": "内线"
+                },
+                {
+                  "answer": "true",
+                  "content": "场地内"
+                }
+              ],
+              "title": "后排队员进攻起跳时，脚可以踏及（）？"
+            }
+          ],
+          "type": 2
+        }
+      ]
+    },
+    {
+      "section": "判断题",
+      "questions": [
+        {
+          "question": [
+            {
+              "answer": "false",
+              "title": "1795年美国麻省好利诺城青年会干事威廉沃尔顿首创了排球运动。"
+            },
+            {
+              "answer": "false",
+              "title": "排球的特点是：广泛的群众性；技术的单一性；高度的技巧性；激烈的对抗性；攻防技术的两重性；松散的集体性。"
+            },
+            {
+              "answer": "false",
+              "title": "排球运动自20世纪50年代进入了现代排球阶段。现代排球的概念是广义的，它包括全攻全守排球，社会化、商业化、职业化排球和“大排球”三个内涵。"
+            },
+            {
+              "answer": "false",
+              "title": "中国排球运动的发展为世界排球运动的发展作出了杰出的贡献，快球、平拉开、前飞、背飞、拉三、拉四等快攻技术，以及以快攻掩护为核心的战术打法均为引进后被我国改良。"
+            },
+            {
+              "answer": "false",
+              "title": "准备姿势的目的是：为移动和击球做好充分准备，为达到更好的移动和为拦网创造更好的条件。"
+            },
+            {
+              "answer": "false",
+              "title": "移动的目的是：使队员及时远离球，保持好人与球的关系，并便于击球。"
+            },
+            {
+              "answer": "false",
+              "title": "人体从静止状态恢复到运动状态叫做制动。分为一步制动法和两步制动法两种。"
+            },
+            {
+              "answer": "false",
+              "title": "发球的技术动作包括：正面上手发球、背面上手发飘球、勾手发飘球、勾手大力发球、正面下手发球、高吊球、跳发球、外旋球。"
+            },
+            {
+              "answer": "false",
+              "title": "发球时会形成旋转和飘晃是因为掌根平面击球，击球面积大，力量分散、绵长，已造成飘晃。手臂挥动击球之前，用旋内削球动作，击球的一侧，使球在击出后产生侧向旋转飞行。"
+            },
+            {
+              "answer": "false",
+              "title": "垫球是指大臂或小臂的坚硬部位击球的动作。来球弧度不同，垫球用力也不同：如来球过高时，垫球时可利用伸膝蹬腿，以提高身体的重心去垫球；必要时还可稍稍跳起垫球，以保持正确的击球点。如来球较低时，可采用低蹲方法垫球。"
+            },
+            {
+              "answer": "false",
+              "title": "发球的技术动作包括：正面上手发球、背面上手发飘球、勾手发飘球、勾手大力发球、正面下手发球、高吊球、跳发球、外旋球。"
+            },
+            {
+              "answer": "false",
+              "title": "发球时会形成旋转和飘晃是因为掌根平面击球，击球面积大，力量分散、绵长，已造成飘晃。手臂挥动击球之前，用旋内削球动作，击球的一侧，使球在击出后产生侧向旋转飞行。"
+            },
+            {
+              "answer": "true",
+              "title": "正面双手传球的手型是：采用拇指对成“一”或“八”字型传球，其手型和球体比较吻合，触球面积较大，容易控制传球方向，增加了传球的稳定性。"
+            },
+            {
+              "answer": "true",
+              "title": "初学排球容易出现以下错误：第一，屈肘，两手并不拢，垫击面不平；采用徒手练习，固定垫球，对墙垫球。第二，移动慢，对不准来球；加强步法练习。第三，动作不协调，击球时手臂上摆；反复垫固定球加以体会。"
+            },
+            {
+              "answer": "true",
+              "title": "垫轻球时，主要靠手臂上抬力量，以增加球的反弹力；如需要垫出较远、弧度较高的球，还要靠蹬地、跟腰、提肩动作的协调配合，抬臂送球动作也要适当增大。垫中等力量球时，迎击动作要小、速度要慢，手臂适当放松，避免弹力过大，主要靠来球本身的反弹力。"
+            },
+            {
+              "answer": "true",
+              "title": "作为二传应该具有以下特点：移动迅速、取位恰当；视野宽阔、善于观察；动作隐蔽，迷惑对方。"
+            },
+            {
+              "answer": "true",
+              "title": "二传吊球的方法：吊球时，可采用双手或单手。双手吊球时，以侧传吊球较好。动作隐蔽，比较突然。单手吊球时，手指并拢，轻拨球的侧下部，传球落入对方空当。注意击球点不能高过网，以防后排违例。"
+            },
+            {
+              "answer": "false",
+              "title": "集体拦网的注意事项：第一，以对方进攻位置相对应的队员为主，其他队员积极配合。第二，主拦队员正确取位。第三，起跳时不需要保持距离适当，控制好重心。第四，拦网队员手臂间距离要保持足够长。"
+            },
+            {
+              "answer": "false",
+              "title": "拦网移动的方法：并步移动：适用于长距离的移动。交叉步移动：实用于中、远距离的移动，向前或斜前移动。跑动：移动距离较近时采用。"
+            },
+            {
+              "answer": "false",
+              "title": "避免拦网时碰网犯规的方法：保持与网之间的距离较远，起跳时注意收腹，用力下压，以避免拦网时触网。"
+            },
+            {
+              "answer": "false",
+              "title": "要根据不同的扣球特点选择拦网时机，根据二传球的高度、距离、速度和扣球队员起跳速度的快慢、手臂动作幅度大小等个人特点为依据。拦高球时，应比扣球队员起跳早，拦远网扣球时，也要与扣球队员同时起跳。拦快球时，拦网队员应与扣球队员同时起跳或稍晚些起跳。"
+            },
+            {
+              "answer": "false",
+              "title": "阵容配备的组织形式：固定三号位做二传的配备；两攻两传配备；三三配备；四二配备；五一配备。"
+            },
+            {
+              "answer": "false",
+              "title": "拦网移动的方法：并步移动：适用于长距离的移动。交叉步移动：实用于中、远距离的移动，向前或斜前移动。跑动：移动距离较近时采用。"
+            },
+            {
+              "answer": "false",
+              "title": "要根据不同的扣球特点选择拦网时机，根据二传球的高度、距离、速度和扣球队员起跳速度的快慢、手臂动作幅度大小等个人特点为依据。拦高球时，应比扣球队员起跳早，拦远网扣球时，也要与扣球队员同时起跳。拦快球时，拦网队员应与扣球队员同时起跳或稍晚些起跳。"
+            },
+            {
+              "answer": "true",
+              "title": "发球的个人战术：拼发球战术、找点发球战术、找人发球战术、变化发球战术、提高成功率战术。"
+            },
+            {
+              "answer": "true",
+              "title": "防守的个人战术：第一，根据判断，即使移动取位，守住“最危险”区域。第二，运用各种击球动作防守起球，力求控制球的高度和落点，使之便于组织反攻。"
+            },
+            {
+              "answer": "true",
+              "title": "中一二进攻阵型的特点：结队放来球后向中部3号位传垫球较容易，因而有利于进攻，适合初学者；二传队员在网前接应一传移动距离近，向4号传球距离短容易传准。缺点是变化少，对方容易识破战术意图。边一二的优点是右手扣球在4号扣球顺手，战术变化多。缺点是5号位接一传时，向2号位垫球距离长，一传偏4号位时，二传接应较困难。"
+            },
+            {
+              "answer": "true",
+              "title": "排球战术：是指运动员在运用技术和战术的过程中，有目的地支配自己行动的心理变化活动。"
+            },
+            {
+              "answer": "true",
+              "title": "排球技术有:发球，垫球，传球，扣球，拦网，准备姿势和移动。"
+            },
+            {
+              "answer": "false",
+              "title": "排球中的个人战术包括：发球，一传，扣球，防守个人战术。"
+            },
+            {
+              "answer": "false",
+              "title": "接发球的基本要求：一、正确判断。二、合理取位。三、明确接发球的范围。四、加强接发球的保护。四种类型包括：6人接发球，6人接发球，4人和3人接发球。"
+            },
+            {
+              "answer": "false",
+              "title": "接扣球及其进攻环节包括：拦网，后排防守，组织进攻等几个部分。拦网是转被动为主动的进攻。后排防守是反击的主要手段。反攻扣球是得分的基础。"
+            },
+            {
+              "answer": "false",
+              "title": "后排防守在接扣球战术中的作用：后排防守是第一道防线，是保证少失分和争取反击的基础。"
+            },
+            {
+              "answer": "false",
+              "title": "5人接发球：除2名二传在网前站立或后排插上外，其余4名队员均担负起一传任务。通常为一三一或三三站位。这种方式便于队员分布，但二传插上距离较远或者进攻变化较少。"
+            },
+            {
+              "answer": "false",
+              "title": "接发球的基本要求：一、正确判断。二、合理取位。三、明确接发球的范围。四、加强接发球的保护。四种类型包括：6人接发球，6人接发球，4人和3人接发球。"
+            },
+            {
+              "answer": "true",
+              "title": "后排防守时的注意事项：1.与拦网的配合。2.防守的互相弥补和接应。3.具备良好的心理素质。"
+            },
+            {
+              "answer": "true",
+              "title": "4人接发球：二传和上快球队员站在网前不接发球，后场4人“一”字或弧线站立。这种方式便于二传传球和进攻跑动，但容易造成空心，对接发球判断和移动要求高。一般用来针对发球较差对手采用。"
+            },
+            {
+              "answer": "true",
+              "title": "3人接发球：前排两个队员和一个插上队员不接发球，或前排三名队员都不接发球而由后排队员担负全场一传任务。"
+            },
+            {
+              "answer": "true",
+              "title": "两人接发球：可以更好地发挥进攻威力，并且让一传最好的队员接发球是其最大特点。"
+            },
+            {
+              "answer": "true",
+              "title": "双人拦网时“边跟进”防守阵形的形式、特点及队员的分工和运用：边跟进是两人拦网，不拦网的队员成半弧形的防守阵型。这对防大力扣球较有利，但弱点是球场中间空隙大，对方如扣直线结合吊球，轻扣，则较难防。"
+            },
+            {
+              "answer": "true",
+              "title": "双人拦网时“心跟进”防守阵形的形式，但其弱点是后排空隙大，两腰易造成空当。"
+            },
+            {
+              "answer": "true",
+              "title": "排球场上的2条边线；2条端线；1条中线；2条进攻线（3米线）是无限延长的。"
+            },
+            {
+              "answer": "true",
+              "title": "裁判员检查球网是否符合要求的方法：球网的高度应从场地中间丈量,球网两端（边线上空）的高度必须相等，并不得超过规定网高2厘米。"
+            },
+            {
+              "answer": "true",
+              "title": "#question#安装标志杆时要注意：标志杆分别设在标志带外沿球网的不同侧面，并高出网上沿80厘米。"
+            },
+            {
+              "answer": "false",
+              "title": "对正式比赛用球的圆周、重量、气压的规定：球的圆周在55～57厘米之间、重量在160～180克之间、气压在0.30～0.325公斤每平方厘米。"
+            },
+            {
+              "answer": "false",
+              "title": "胜一分、胜一局和胜一场的计算方法是：胜一球：当一方失误或任何其他犯规时，另一方胜一分。胜一局：先得30分并同时超出对方至少2分的队胜一局。胜一场：5局3胜制比赛，胜3局的队胜一场；3局2胜制比赛，胜2局的队胜一场。"
+            },
+            {
+              "answer": "false",
+              "title": "#question#后排队员在前场区，对整体低于球网上沿的球完成进攻性击球为犯规。这称为后排进攻犯规。"
+            },
+            {
+              "answer": "false",
+              "title": "比赛前第一裁判员应检查场地、比赛用球，主持抽签，掌握正式比赛活动时间，并不用检查器材。"
+            },
+            {
+              "answer": "false",
+              "title": "第二裁判员的职责是在比赛中发现以下犯规立即鸣哨并作出手势：接发球队员位置错误，队员触及球网上部，网上穿越对方场区和空间，后排队员进攻性击球和拦网犯规，球从标志杆外进入对方场地，球触及场外物品。"
+            },
+            {
+              "answer": "false",
+              "title": "#question#司线员在以下情况时必须做出旗示：负责端线的司线员负责判断发球队员手的犯规。当第一裁判询问时，司线员必须做一次旗示。负责判断线附近的球，示以界内界外及示意打手出界旗示。"
+            },
+            {
+              "answer": "false",
+              "title": "胜一分、胜一局和胜一场的计算方法是：胜一球：当一方失误或任何其他犯规时，另一方胜一分。胜一局：先得30分并同时超出对方至少2分的队胜一局。胜一场：5局3胜制比赛，胜3局的队胜一场；3局2胜制比赛，胜2局的队胜一场。"
+            },
+            {
+              "answer": "false",
+              "title": "比赛前第一裁判员应检查场地、比赛用球，主持抽签，掌握正式比赛活动时间，并不用检查器材。"
+            },
+            {
+              "answer": "true",
+              "title": "裁判员对球做出判罚的程序是：1.鸣哨中断比赛，用手势表明犯规性质。2.指出犯规队员或提出请求的队。3.指出下一次发球的队。"
+            },
+            {
+              "answer": "true",
+              "title": "发球队员必须在第一裁判鸣哨发球后8秒钟内假球发出。超出8秒为延误发球。"
+            },
+            {
+              "answer": "true",
+              "title": "排球出界与否取决于落地时整个球的中心点是否出界。"
+            },
+            {
+              "answer": "true",
+              "title": "持球的依据是球停留时间的长短。"
+            },
+            {
+              "answer": "true",
+              "title": "连击犯规判断法：首先分清是第几次击球，然后在判断是否造成连击犯规，即一名队员明显地连续击球2次或球连续触及他身体的不同部位（拦网一次除外）。"
+            }
+          ],
+          "type": 3
+        }
+      ]
+    },
+    {
+      "section": "填空题",
+      "questions": [
+        {
+          "question": [
+            {
+              "options": [
+                {
+                  "content": "威廉·摩根",
+                  "answer": "true"
+                }
+              ],
+              "title": "排球运动起源于1895年，由美国麻省好利诺城青年会干事___发明。"
+            },
+            {
+              "options": [
+                {
+                  "content": "国际排球联合会",
+                  "answer": "true"
+                }
+              ],
+              "title": "___于1947年在法国巴黎成立，并决定采用美式6人制排球。"
+            },
+            {
+              "options": [
+                {
+                  "content": "位置",
+                  "answer": "true"
+                }
+              ],
+              "title": "排球规则规定，比赛中每当交换发球，队员要进行___轮转。"
+            },
+            {
+              "options": [
+                {
+                  "content": "准备活动、移动",
+                  "answer": "true"
+                }
+              ],
+              "title": "___和___是排球运动中各项技术的基础。"
+            },
+            {
+              "options": [
+                {
+                  "content": "垫球、传球、发球、扣球、拦网",
+                  "answer": "true"
+                }
+              ],
+              "title": "排球运动的五大项基本技术:___、___、___、___、___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "阵容配备",
+                  "answer": "true"
+                }
+              ],
+              "title": "___是合理地使用本队队员的一种组织手段，可最大限度地发挥每个队员的作用和特长。"
+            },
+            {
+              "options": [
+                {
+                  "content": "进攻",
+                  "answer": "true"
+                }
+              ],
+              "title": "“四二”配备即安排4个___队员和2个二传队员。"
+            },
+            {
+              "options": [
+                {
+                  "content": "进攻",
+                  "answer": "true"
+                }
+              ],
+              "title": "“五一”配备即安排5个___队员和1个二传队员。"
+            },
+            {
+              "options": [
+                {
+                  "content": "排球网",
+                  "answer": "true"
+                }
+              ],
+              "title": "___长9.5米、宽1米，设在场区中线的中心线的垂直上空。"
+            },
+            {
+              "options": [
+                {
+                  "content": "技术暂停",
+                  "answer": "true"
+                }
+              ],
+              "title": "第1～4局，每当领先队达到8分或16分时自动执行___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "8",
+                  "answer": "true"
+                }
+              ],
+              "title": "发球时，第一裁判员鸣哨后，队员必须在___秒以内发出，否则犯规。"
+            },
+            {
+              "options": [
+                {
+                  "content": "发球、不包括端线",
+                  "answer": "true"
+                }
+              ],
+              "title": "___区宽9米，位子在端线后___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "标志带",
+                  "answer": "true"
+                }
+              ],
+              "title": "在球网两端，垂直于边线和中线的交接处有两条带子称为___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "标志杆",
+                  "answer": "true"
+                }
+              ],
+              "title": "2根___分别设置在标志带的外沿球网的不同侧，作为网上边线。"
+            },
+            {
+              "options": [
+                {
+                  "content": "无球技术、有球技术",
+                  "answer": "true"
+                }
+              ],
+              "title": "排球技术主要由___和___两部分组成。"
+            },
+            {
+              "options": [
+                {
+                  "content": "坐式排球、气排球、小排球",
+                  "answer": "true"
+                }
+              ],
+              "title": "运动的其他形式除了沙滩排球和软式排球外，还有___、___、___等。"
+            },
+            {
+              "options": [
+                {
+                  "content": "背垫球",
+                  "answer": "true"
+                }
+              ],
+              "title": "背对垫出球的方向将球垫起的方法叫___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "单人拦网、集体拦网",
+                  "answer": "true"
+                }
+              ],
+              "title": "拦网包括___和___两种。"
+            },
+            {
+              "options": [
+                {
+                  "content": "集体拦网",
+                  "answer": "true"
+                }
+              ],
+              "title": "有2人或3人组成的拦网称为___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "正面扣球",
+                  "answer": "true"
+                }
+              ],
+              "title": "___是排球比赛中运用最多的一种进攻技术，它适用于近网和远网扣球。"
+            },
+            {
+              "options": [
+                {
+                  "content": "前场区",
+                  "answer": "true"
+                }
+              ],
+              "title": "从进攻线到中线之间的区域为___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "延长",
+                  "answer": "true"
+                }
+              ],
+              "title": "前场区被认为是向边线外无限___的。"
+            },
+            {
+              "options": [
+                {
+                  "content": "发球",
+                  "answer": "true"
+                }
+              ],
+              "title": "后排右队员在发球区内将球击出而进入比赛的行动，称为___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "发球掩护",
+                  "answer": "true"
+                }
+              ],
+              "title": "发球时，球越过掩护的个人或集体，应判为___犯规。"
+            },
+            {
+              "options": [
+                {
+                  "content": "自由防守队员",
+                  "answer": "true"
+                }
+              ],
+              "title": "比赛中，___穿的服装颜色与其他队员明显不同。"
+            },
+            {
+              "options": [
+                {
+                  "content": "郎平",
+                  "answer": "true"
+                }
+              ],
+              "title": "中国女排涌现了许多优秀运动员，被称为“铁榔头”的是___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "后排进攻违例",
+                  "answer": "true"
+                }
+              ],
+              "title": "后排队员在前场区或踏及进攻线及其延长线时，将整个球体高于球网上沿的球直接击入对方场区，则判为___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "普通",
+                  "answer": "true"
+                }
+              ],
+              "title": "排球比赛决胜局中没有（技术）暂停，每队可请求2次___暂停。"
+            },
+            {
+              "options": [
+                {
+                  "content": "快球掩护拉开战术",
+                  "answer": "true"
+                }
+              ],
+              "title": "3号位队员上前扣快球（或作佯攻）掩护4号位扣拉开球的战术称为___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "前交叉战术",
+                  "answer": "true"
+                }
+              ],
+              "title": "4号位队员扣快球，3号位队员从4号队员身后交叉跑动扣一般低球的战术称为___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "围绕",
+                  "answer": "true"
+                }
+              ],
+              "title": "___战术是指4号位队员扣拉开球，3号位队员绕到2号位二传身后进攻。"
+            },
+            {
+              "options": [
+                {
+                  "content": "夹塞",
+                  "answer": "true"
+                }
+              ],
+              "title": "___战术是指3号位队员扣短平快佯攻掩护，4号位队员跑至二传队员和三号位队员之间扣半高球。"
+            },
+            {
+              "options": [
+                {
+                  "content": "梯次",
+                  "answer": "true"
+                }
+              ],
+              "title": "___战术是指3号位队员上前扣快球佯攻掩护，4号位队员内切跑动到3号位队员身后，等3号位队员下落时即扣球。"
+            },
+            {
+              "options": [
+                {
+                  "content": "自由人",
+                  "answer": "true"
+                }
+              ],
+              "title": "排球比赛中的自由防守队员简称为___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "发球",
+                  "answer": "true"
+                }
+              ],
+              "title": "___是排球技术中唯一不受他人制约的技术。"
+            },
+            {
+              "options": [
+                {
+                  "content": "发球",
+                  "answer": "true"
+                }
+              ],
+              "title": "___是比赛的开始，也是进攻的开始。"
+            },
+            {
+              "options": [
+                {
+                  "content": "接扣球",
+                  "answer": "true"
+                }
+              ],
+              "title": "垫球在排球比赛中占有非常重要的地位，主要用于接发球、___和接拦回球。"
+            },
+            {
+              "options": [
+                {
+                  "content": "全掌、虎口",
+                  "answer": "true"
+                }
+              ],
+              "title": "侧面下手发球击球时用___、___或掌根击球的后下部。"
+            },
+            {
+              "options": [
+                {
+                  "content": "击球手臂的前上方一臂距离",
+                  "answer": "true"
+                }
+              ],
+              "title": "正面上手发球的击球点在___。"
+            },
+            {
+              "options": [
+                {
+                  "content": "正面双手传球、背向双手传球、侧面双手传球",
+                  "answer": "true"
+                }
+              ],
+              "title": "传球的动作多种多样，其基本动作可分为___、___、___和跳传球四种。"
+            }
+          ],
+          "type": 1
+        }
+      ]
+    }
+  ]
+}
