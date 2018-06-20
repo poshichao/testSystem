@@ -9,6 +9,7 @@
 namespace app\index\controller;
 
 
+use app\index\model\Exam;
 use app\index\model\Paper;
 use app\index\model\Score;
 use think\Request;
@@ -28,8 +29,19 @@ class PaperController extends IndexController
     {
         $paperId = Request::instance()->param('id');
         $paper = Paper::getPaperWithItems($paperId);
+
         $offset = $paper->time * 60;
         $ept = self::setExpectTime($offset);
+        $score = (new Score())->getScoreByExamID($paper->exam_id, session('studentId'));
+        $sbt = $score->submit_time;
+        if(time()>=$ept || $sbt){
+            return $this->error('您已经参加过本场考试！', url('exam/index'));
+        }
+        $exam = (new Exam())->get($paper->exam_id);
+        $ext = $exam->exam_time;
+        if(time()>=$ext){
+            return $this->error('对不起，考试时间已过！', url('exam/index'));
+        }
         $this->assign('ept', $ept);
         $this->assign('Paper', $paper);
         $this->assign('items', $paper->items);
