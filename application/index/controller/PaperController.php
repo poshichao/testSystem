@@ -81,6 +81,7 @@ class PaperController extends IndexController
 
         $Score = (new Score())->getScoreByExamID($Paper->exam_id,$studentId);
         $Score->score = 0;
+        $Score->submit_time = time();
 
         $i = 0;
         foreach ($Paper->items as $item) {

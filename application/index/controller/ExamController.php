@@ -49,7 +49,7 @@ class ExamController extends IndexController
         $Exam = new Exam();
 
         $Exam->name = $post['name'];
-        $Exam->exam_time = $post['exam_time'];
+        $Exam->exam_time = strtotime($post['exam_time']);
         $Exam->room_id = $post['room_id'];
         $Exam->course_id = $post['course_id'];
 
@@ -97,7 +97,7 @@ class ExamController extends IndexController
 
 
         $Exam->name = $post['name'];
-        $Exam->exam_time = $post['exam_time'];
+        $Exam->exam_time = strtotime($post['exam_time']);
         $Exam->room_id = $post['room_id'];
         $Exam->course_id = $post['course_id'];
 

@@ -79,11 +79,12 @@
                                 <a href="{:url('delete?id='.$exam->id.'&room_id='.$exam->room_id)}"
                                    class="btn btn-danger btn-xs">
                                     <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
-                                <a href="{:url('paper/showScoreList?id='.$exam->id)}" class="btn btn-warning btn-xs"><li class="glyphicon glyphicon-th-list"></li>&nbsp;成绩单</a>
+                                <a href="{:url('paper/showScoreList?id='.$exam->id)}" class="btn btn-warning btn-xs">
+                                    <li class="glyphicon glyphicon-th-list"></li>&nbsp;成绩单</a>
                             </td>
                             {else/}
                             <td width="15%">
-                                <a href="{:url('paper/realtime?id='.$exam->paper->id)}"
+                                <a href="{:url('paper/realtime?id='.$exam->paper->id)}" onclick="return exam_sure()"
                                    class="btn btn-primary btn-xs">
                                     <li class="glyphicon glyphicon-file"></li>&nbsp;参加考试</a>&nbsp;
                             </td>
@@ -98,4 +99,12 @@
         </div>
     </div>
 </div>
+<script language="javascript">
+
+    function exam_sure() {
+        return confirm("确认现在开始考试吗?") === true;
+    }
+
+
+</script>
 {/block}
