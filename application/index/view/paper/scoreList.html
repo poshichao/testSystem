@@ -1,0 +1,49 @@
+{extend name="teacher/index"/} {block name="title"} 成绩单 {/block} {block name="content"}
+<div id="page-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                {eq name="isTeacher" value="true"}
+                <li><a href="{:url('room/index')}">班级管理</a></li>
+                <li><a href="{:url('exam/index?id='.$exam->id)}">考试管理</a></li>
+                <li class="active">成绩单</li>
+                {else/}
+                <li><a href="#">我的考试</a></li>
+                <li class="active">考试列表</li>
+                {/eq}
+            </ol>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {$room->name} {$exam->name} 成绩单
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>姓名</th>
+                            <th>成绩</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	{volist name="members" id="member"}
+                        <tr>
+                            <td>{$key + 1}</td>
+                            <td>{$member->name}</td>
+                            {eq name="$member->scores()->where('exam_id', $exam->id)->find()" value=""}
+                            <td>----</td>
+                            {else /}
+                            <td>{$member->scores()->where('exam_id', $exam->id)->find()->score}</td>
+                            {/eq}
+                        </tr>
+                        {/volist}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
