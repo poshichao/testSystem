@@ -10,8 +10,6 @@ namespace app\index\controller;
 
 use app\index\model\Exam;
 use app\index\model\Room;
-use think\Controller;
-use app\index\controller\IndexController;
 use think\Request;
 
 class ExamController extends IndexController
