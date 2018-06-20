@@ -1,0 +1,34 @@
+{extend name="teacher/index"/} {block name="title"} 试卷管理 {/block} {block name="content"}
+<div id="page-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li>试卷预览</li>
+            </ol>
+        </div>
+    </div>
+    <h3 class="text-center">{$Paper->name}</h3>
+    <br/>
+    <h5 class="text-right">考试时间: {$Paper->time}分钟</h5>
+    <br/><br/><br/>
+    <table class="table table-striped table-bordered table-hover">
+        <tbody>
+
+        {volist name="items" id="item"}
+
+        <tr>
+            <td>{$i}. {$item->dry}</td>
+            <td>
+                <div class="form-group">
+                    <textarea class="form-control" rows="3" name="answer"></textarea>
+                </div>
+            </td>
+        </tr>
+
+        {/volist}
+        </tbody>
+    </table>
+
+</div>
+
+{/block}
