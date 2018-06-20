@@ -13,6 +13,7 @@ use app\index\model\Exam;
 use app\index\model\Paper;
 use app\index\model\Score;
 use think\Request;
+use think\Session;
 
 class PaperController extends IndexController
 {
@@ -72,17 +73,24 @@ class PaperController extends IndexController
 
     public function insert() {
         $post = Request::instance()->post();
+        $paperId = Request::instance()->param('id/d');
 
-        $Paper = new Paper();
+        $Paper = Paper::get($paperId);
+        $studentId = Session::get('studentId');
 
-        $Paper->name = $post['name'];
-        $Paper->sex = $post['sex'];
-        $Paper->work_number = $post['work_number'];
-        $Paper->password = $post['password'];
-        $Paper->room_id = $post['room_id'];
+        $Score = (new Score())->getScoreByExamID($Paper->exam_id,$studentId);
+        $Score->score = 0;
 
-        if ($Paper->save()) {
-            return $this->success('保存成功！', 'index');
+        $i = 0;
+        foreach ($Paper->items as $item) {
+            if ($item->option === $post['answer'][$i]){
+                $Score->score += $item->score;
+            }
+            $i++;
+        }
+
+        if ($Score->save()) {
+            return $this->success('保存成功！', url('Exam/index'));
         } else {
             return $this->error('保存失败！');
         }

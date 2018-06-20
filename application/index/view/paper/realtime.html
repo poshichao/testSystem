@@ -12,7 +12,7 @@
     <br/>
     <h5 class="text-right">考试时间: {$Paper->time}分钟</h5>
     <br/><br/><br/>
-    <form id="AnswerForm" action="{:url('insert')}" onsubmit="return submit_sure()" method="post">
+    <form id="AnswerForm" action="{:url('insert?id='.$Paper->id)}" onsubmit="return submit_sure()" method="post">
         <table class="table table-striped table-bordered table-hover">
             <tbody>
 
@@ -22,7 +22,7 @@
                 <td>{$i}. {$item->dry}</td>
                 <td>
                     <div class="form-group">
-                        <textarea class="form-control" rows="3" name="answer"></textarea>
+                        <textarea class="form-control" rows="3" name="answer[]"></textarea>
                     </div>
                 </td>
             </tr>
