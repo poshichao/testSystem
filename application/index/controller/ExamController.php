@@ -9,7 +9,6 @@
 namespace app\index\controller;
 
 use app\index\model\Common;
-use app\index\model\Content;
 use app\index\model\Exam;
 use app\index\model\Item;
 use app\index\model\Paper;
@@ -25,6 +24,7 @@ class ExamController extends IndexController
         $res = (new Room())->getExamByID($room_id);
         $exams = $res['exam'];
         foreach ($exams as $exam){
+            $exam->exam_time = date('Y-m-d H:i:s', $exam->exam_time);
             if($exam->paper == null){
                 $exam->paper = "";
             }
