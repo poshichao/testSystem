@@ -5,11 +5,12 @@
         <div class="col-md-12">
             <ol class="breadcrumb">
                 <li><a href="#">班级管理</a></li>
-                <li class="active">成员编辑</li>
+                <li class="active">考试编辑</li>
             </ol>
         </div>
     </div>
-    <form class="form-horizontal col-md-6 col-md-offset-3" action="{:url('update?id='.$Exam->id)}" method="post">
+    <form class="form-horizontal col-md-6 col-md-offset-3" action="{:url('update?id='.$Exam->id)}"
+          method="post">
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">考试名称</label>
             <div class="col-sm-10">
@@ -46,7 +47,8 @@
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-floppy-save"></i>&nbsp;保存
+                <button type="submit" id="submit" class="btn btn-default"><i
+                        class="glyphicon glyphicon-floppy-save"></i>&nbsp;保存
                 </button>
             </div>
         </div>
@@ -58,8 +60,10 @@
 <script src="/testSystem/public/static/assets/js/bootstrap.min.js"></script>
 <script src="/testSystem/public/static/assets/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript">
+
     $('#datetimepicker1').datetimepicker({
-        'format':'YYYY-MM-DD HH:mm:ss'
+        'format': 'YYYY-MM-DD HH:mm:ss'
     });
+
 </script>
 {/block}
