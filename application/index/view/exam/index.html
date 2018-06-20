@@ -79,6 +79,7 @@
                                 <a href="{:url('delete?id='.$exam->id.'&room_id='.$exam->room_id)}"
                                    class="btn btn-danger btn-xs">
                                     <li class="glyphicon glyphicon-trash"></li>&nbsp;删除</a>
+                                <a href="{:url('paper/showScoreList?id='.$exam->id)}" class="btn btn-warning btn-xs"><li class="glyphicon glyphicon-th-list"></li>&nbsp;成绩单</a>
                             </td>
                             {else/}
                             <td width="15%">

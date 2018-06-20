@@ -12,6 +12,7 @@ namespace app\index\controller;
 use app\index\model\Exam;
 use app\index\model\Paper;
 use app\index\model\Score;
+use app\index\model\Room;
 use think\Request;
 use think\Session;
 
@@ -94,5 +95,17 @@ class PaperController extends IndexController
         } else {
             return $this->error('保存失败！');
         }
+    }
+
+    public function showScoreList() {
+        $examId = Request::instance()->param('id/d');
+        $exam = Exam::get($examId);
+        $room = Room::get($exam->room_id);
+        $members = $room->member()->where('room_id', $exam->room_id)->select();
+
+        $this->assign('exam', $exam);
+        $this->assign('room', $room);
+        $this->assign('members', $members);
+        return $this->fetch('scoreList');
     }
 }
