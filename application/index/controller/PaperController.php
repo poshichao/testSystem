@@ -52,7 +52,16 @@ class PaperController extends IndexController
     {
         $paperId = Request::instance()->param('id');
         $paper = Paper::get($paperId);
-        $score = (new Score())->getScoreByExamID($paper->exam_id, session('studentId'));
+        $examId = $paper->exam_id;
+        $studentId = session('studentId');
+        $score = (new Score())->getScoreByExamID($examId,$studentId);
+        if(!$score){
+            $score = new Score();
+            $score->exam_id = $examId;
+            $score->student_id = $studentId;
+            $score->expect_time = 0;
+            $score->submit_time = 0;
+        }
         $ept = time() + $offset;
         if (!$score->expect_time) {
             $score->expect_time = $ept;
