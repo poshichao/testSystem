@@ -18,13 +18,9 @@ class MemberController extends IndexController
     public function index()
     {
 
-        $room_id = Request::instance()->get('room_id');
-
+        $room_id = Request::instance()->param('room_id');
         $res = (new Room())->getMemberByID($room_id);
-
         $this->assign('students', $res['member']);
-
-
         return $this->fetch();
     }
     public function add() {
